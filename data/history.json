@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "date": "2026-11-22",
+    "checked_at": "2026-11-22T15:44:04Z",
+    "new": 11,
+    "changed": 0,
+    "no_longer_in_feed": 0,
+    "total_leads": 11,
+    "sources_successful": 2,
+    "sources_total": 2
+  }
+]

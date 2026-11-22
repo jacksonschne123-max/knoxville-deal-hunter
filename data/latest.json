@@ -1,13 +1,235 @@
 {
   "schema_version": 2,
-  "checked_at": null,
-  "last_successful_at": null,
+  "checked_at": "2026-11-22T15:44:04Z",
+  "last_successful_at": "2026-11-22T15:44:04Z",
   "collector": "RSS discovery; not retailer-account checkout verification",
-  "sources": [],
-  "leads": [],
+  "sources": [
+    {
+      "id": "kcl",
+      "name": "The Krazy Coupon Lady RSS",
+      "ok": true,
+      "offers": 306,
+      "checked_at": "2026-11-22T15:44:04Z"
+    },
+    {
+      "id": "slickdeals",
+      "name": "Slickdeals frontpage RSS",
+      "ok": true,
+      "offers": 2,
+      "checked_at": "2026-11-22T15:44:04Z"
+    }
+  ],
+  "leads": [
+    {
+      "id": "8c88e588f2a6413fa9",
+      "store": "Walmart",
+      "title": "Get Up to $4.50 Walmart Cash on SheaMoisture, Nexxus, and Vaseline",
+      "description": "",
+      "url": "https://thekrazycouponlady.com/2026/11/17/get-up-to-4-50-walmart-cash-on-sheamoisture-nexxus-and-vaseline/",
+      "source": "The Krazy Coupon Lady RSS",
+      "source_id": "kcl",
+      "published_at": "2026-11-17T15:58:00Z",
+      "discovered_at": "2026-11-22T15:44:04Z",
+      "signals": [
+        "Price/reward amount mentioned",
+        "Mentions rewards"
+      ],
+      "priority_score": 43,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "a41f9b59f2bc40e8d9",
+      "store": "Kroger",
+      "title": "25% Off Select* Hershey's at Kroger, Plus $10 Off a Hershey Movie Ticket",
+      "description": "",
+      "url": "https://thekrazycouponlady.com/2026/11/18/25-off-select-hersheys-at-kroger-plus-10-off-a-hershey-movie-ticket/",
+      "source": "The Krazy Coupon Lady RSS",
+      "source_id": "kcl",
+      "published_at": "2026-11-18T22:19:00Z",
+      "discovered_at": "2026-11-22T15:44:04Z",
+      "signals": [
+        "25% advertised",
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 33,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "636669fd91dbbab535",
+      "store": "Walmart",
+      "title": "20' x 10' Ozark Trail Pop Up Canopy Tent w/ Wheeled Bag (White) $139 + Free S&H",
+      "description": "Available for shipping https://www.walmart.com/ip/Ozark-...om=/search",
+      "url": "https://slickdeals.net/f/20352516-20-x-10-ozark-trail-pop-up-canopy-tent-w-wheeled-bag-white-139-free-s-h",
+      "source": "Slickdeals frontpage RSS",
+      "source_id": "slickdeals",
+      "published_at": "2026-11-22T13:36:49Z",
+      "discovered_at": "2026-11-22T15:44:04Z",
+      "signals": [
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 8,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "17de0020c7c1066c6b",
+      "store": "Target",
+      "title": "845-Pc LEGO Star Wars Andor K-2SO Security Droid Building Toy $43.20 + Free S&H",
+      "description": "Lowest price for this item. $43.19 https://www.target.com/p/lego-sta...A-94152779",
+      "url": "https://slickdeals.net/f/20368371-lego-star-wars-andor-k-2so-security-droid-building-set-75434",
+      "source": "Slickdeals frontpage RSS",
+      "source_id": "slickdeals",
+      "published_at": "2026-11-22T11:25:21Z",
+      "discovered_at": "2026-11-22T15:44:04Z",
+      "signals": [
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 8,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "25d5d00678f9f4dd32",
+      "store": "Dollar General",
+      "title": "Dollar General Saturday Deals: $0.71 Kellogg's, Colgate, and More",
+      "description": "",
+      "url": "https://thekrazycouponlady.com/2026/11/18/dollar-general-saturday-deals-0-71-kelloggs-colgate-and-more/",
+      "source": "The Krazy Coupon Lady RSS",
+      "source_id": "kcl",
+      "published_at": "2026-11-18T14:27:00Z",
+      "discovered_at": "2026-11-22T15:44:04Z",
+      "signals": [
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 8,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "a4f251c11ed11ee6da",
+      "store": "Sam’s Club",
+      "title": "Family Holiday Character Pajamas Starting at $11.98 at Sam's Club",
+      "description": "",
+      "url": "https://thekrazycouponlady.com/2026/11/17/family-holiday-character-pajamas-starting-at-11-98-at-sams-club/",
+      "source": "The Krazy Coupon Lady RSS",
+      "source_id": "kcl",
+      "published_at": "2026-11-17T17:48:00Z",
+      "discovered_at": "2026-11-22T15:44:04Z",
+      "signals": [
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 8,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "699801a99b506d7950",
+      "store": "Walgreens",
+      "title": "Walgreens Shopping Haul: $83.22 Worth of Personal Care Products For $6.97",
+      "description": "",
+      "url": "https://thekrazycouponlady.com/2026/11/17/walgreens-shopping-haul-83-22-worth-of-personal-care-products-for-6-97/",
+      "source": "The Krazy Coupon Lady RSS",
+      "source_id": "kcl",
+      "published_at": "2026-11-17T17:37:00Z",
+      "discovered_at": "2026-11-22T15:44:04Z",
+      "signals": [
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 8,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "e9b25f71bb75902efc",
+      "store": "CVS",
+      "title": "CVS Shopping Haul: Pay Just $7.56 for $61.03 Worth of Beauty Products",
+      "description": "",
+      "url": "https://thekrazycouponlady.com/2026/11/17/cvs-shopping-haul-pay-just-7-56-for-61-03-worth-of-beauty-products/",
+      "source": "The Krazy Coupon Lady RSS",
+      "source_id": "kcl",
+      "published_at": "2026-11-17T15:41:00Z",
+      "discovered_at": "2026-11-22T15:44:04Z",
+      "signals": [
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 8,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "a892e3955516946f35",
+      "store": "Target",
+      "title": "Target Shopping Haul: Just $12.31 for $47.03 Worth of Tide, Dove, and More",
+      "description": "",
+      "url": "https://thekrazycouponlady.com/2026/11/17/target-shopping-haul-just-12-31-for-47-03-worth-of-tide-dove-and-more/",
+      "source": "The Krazy Coupon Lady RSS",
+      "source_id": "kcl",
+      "published_at": "2026-11-17T15:08:00Z",
+      "discovered_at": "2026-11-22T15:44:04Z",
+      "signals": [
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 8,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "4f9887a849c98793b8",
+      "store": "Target",
+      "title": "We Found The Viral NeeDoh Lava Lamps at Target And They're Selling Out Fast",
+      "description": "",
+      "url": "https://thekrazycouponlady.com/2026/11/18/we-found-the-viral-needoh-lava-lamps-at-target-and-theyre-selling-out-fast/",
+      "source": "The Krazy Coupon Lady RSS",
+      "source_id": "kcl",
+      "published_at": "2026-11-18T16:58:00Z",
+      "discovered_at": "2026-11-22T15:44:04Z",
+      "signals": [],
+      "priority_score": 0,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "d060e75b69f6d73f04",
+      "store": "Walgreens",
+      "title": "Huggies Diapers and Pull-Ups Clearance at Walgreens: Save 50%",
+      "description": "",
+      "url": "https://thekrazycouponlady.com/2026/11/18/huggies-diapers-and-pull-ups-clearance-at-walgreens-save-50/",
+      "source": "The Krazy Coupon Lady RSS",
+      "source_id": "kcl",
+      "published_at": "2026-11-18T14:45:00Z",
+      "discovered_at": "2026-11-22T15:44:04Z",
+      "signals": [],
+      "priority_score": 0,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    }
+  ],
   "reviewed_deals": [],
-  "changes": {"new":0,"changed":0,"no_longer_in_feed":0,"total_leads":0,"sources_successful":0,"sources_total":2},
-  "new_ids": [],
+  "changes": {
+    "date": "2026-11-22",
+    "checked_at": "2026-11-22T15:44:04Z",
+    "new": 11,
+    "changed": 0,
+    "no_longer_in_feed": 0,
+    "total_leads": 11,
+    "sources_successful": 2,
+    "sources_total": 2
+  },
+  "new_ids": [
+    "8c88e588f2a6413fa9",
+    "a41f9b59f2bc40e8d9",
+    "636669fd91dbbab535",
+    "17de0020c7c1066c6b",
+    "25d5d00678f9f4dd32",
+    "a4f251c11ed11ee6da",
+    "699801a99b506d7950",
+    "e9b25f71bb75902efc",
+    "a892e3955516946f35",
+    "4f9887a849c98793b8",
+    "d060e75b69f6d73f04"
+  ],
   "updated_ids": [],
-  "note": "Waiting for the first scheduled GitHub Actions collection. No live deals have been confirmed."
+  "note": "Ranked deal values are only allowed for manually reviewed deals checked today. Feed leads are not confirmed coupon stacks."
 }
