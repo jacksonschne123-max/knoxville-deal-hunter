@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>Example Coupon Feed</title>
+<item><title>CVS: 2 oral-care items, $6 and $5 ExtraBucks reported</title><link>https://example.com/cvs-test?utm_source=sample</link><description><![CDATA[<p>Check CVS coupons and limits before checkout</p>]]></description><pubDate>Sun, 22 Nov 2026 12:00:00 GMT</pubDate></item>
+<item><title>Publix BOGO cereal this week</title><link>https://example.com/publix-cereal</link><description>Qualifying sizes may vary</description><pubDate>Sun, 22 Nov 2026 12:00:00 GMT</pubDate></item>
+<item><title>Generic tech story without retail store</title><link>https://example.com/none</link><pubDate>Sun, 22 Nov 2026 12:00:00 GMT</pubDate></item>
+</channel></rss>
