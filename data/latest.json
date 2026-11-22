@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-22T15:44:44Z",
-  "last_successful_at": "2026-11-22T15:44:44Z",
+  "checked_at": "2026-11-22T15:45:35Z",
+  "last_successful_at": "2026-11-22T15:45:35Z",
   "collector": "RSS discovery; not retailer-account checkout verification",
   "sources": [
     {
@@ -9,14 +9,14 @@
       "name": "The Krazy Coupon Lady RSS",
       "ok": true,
       "offers": 306,
-      "checked_at": "2026-11-22T15:44:44Z"
+      "checked_at": "2026-11-22T15:45:35Z"
     },
     {
       "id": "slickdeals",
       "name": "Slickdeals frontpage RSS",
       "ok": true,
       "offers": 2,
-      "checked_at": "2026-11-22T15:44:44Z"
+      "checked_at": "2026-11-22T15:45:35Z"
     }
   ],
   "leads": [
@@ -29,7 +29,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T15:58:00Z",
-      "discovered_at": "2026-11-22T15:44:44Z",
+      "discovered_at": "2026-11-22T15:45:35Z",
       "signals": [
         "Price/reward amount mentioned",
         "Mentions rewards"
@@ -47,7 +47,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T22:19:00Z",
-      "discovered_at": "2026-11-22T15:44:44Z",
+      "discovered_at": "2026-11-22T15:45:35Z",
       "signals": [
         "25% advertised",
         "Price/reward amount mentioned"
@@ -65,7 +65,7 @@
       "source": "Slickdeals frontpage RSS",
       "source_id": "slickdeals",
       "published_at": "2026-11-22T13:36:49Z",
-      "discovered_at": "2026-11-22T15:44:44Z",
+      "discovered_at": "2026-11-22T15:45:35Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -82,7 +82,7 @@
       "source": "Slickdeals frontpage RSS",
       "source_id": "slickdeals",
       "published_at": "2026-11-22T11:25:21Z",
-      "discovered_at": "2026-11-22T15:44:44Z",
+      "discovered_at": "2026-11-22T15:45:35Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -99,7 +99,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T14:27:00Z",
-      "discovered_at": "2026-11-22T15:44:44Z",
+      "discovered_at": "2026-11-22T15:45:35Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -116,7 +116,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T17:48:00Z",
-      "discovered_at": "2026-11-22T15:44:44Z",
+      "discovered_at": "2026-11-22T15:45:35Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -133,7 +133,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T17:37:00Z",
-      "discovered_at": "2026-11-22T15:44:44Z",
+      "discovered_at": "2026-11-22T15:45:35Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -150,7 +150,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T15:41:00Z",
-      "discovered_at": "2026-11-22T15:44:44Z",
+      "discovered_at": "2026-11-22T15:45:35Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -167,7 +167,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T15:08:00Z",
-      "discovered_at": "2026-11-22T15:44:44Z",
+      "discovered_at": "2026-11-22T15:45:35Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -184,7 +184,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T16:58:00Z",
-      "discovered_at": "2026-11-22T15:44:44Z",
+      "discovered_at": "2026-11-22T15:45:35Z",
       "signals": [],
       "priority_score": 0,
       "stage": "research_lead",
@@ -199,7 +199,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T14:45:00Z",
-      "discovered_at": "2026-11-22T15:44:44Z",
+      "discovered_at": "2026-11-22T15:45:35Z",
       "signals": [],
       "priority_score": 0,
       "stage": "research_lead",
@@ -209,7 +209,7 @@
   "reviewed_deals": [],
   "changes": {
     "date": "2026-11-22",
-    "checked_at": "2026-11-22T15:44:44Z",
+    "checked_at": "2026-11-22T15:45:35Z",
     "new": 0,
     "changed": 0,
     "no_longer_in_feed": 0,
