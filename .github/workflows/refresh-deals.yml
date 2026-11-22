@@ -39,7 +39,20 @@ jobs:
           git add data/latest.json data/history.json
           if ! git diff --staged --quiet; then
             git commit -m "Refresh coupon discovery $(date -u +%Y-%m-%d)"
-            git push
+            # Include any commits that landed after this run checked out.
+            # If the remote changes on the first try, retry a rebased push.
+            for attempt in 1 2 3; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then
+                break
+              fi
+              if [ "$attempt" -eq 3 ]; then
+                echo "Could not push the daily snapshot after 3 attempts" >&2
+                exit 1
+              fi
+              sleep 2
+            done
           fi
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
