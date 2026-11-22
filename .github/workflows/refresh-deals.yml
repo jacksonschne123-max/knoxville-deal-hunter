@@ -2,6 +2,8 @@ name: Refresh and Publish Knoxville Deals
 on:
   push:
     branches: [main]
+    paths:
+      - '.github/workflows/refresh-deals.yml'
   schedule:
     # 8:17 AM EST / 9:17 AM EDT (GitHub cron runs in UTC and may be delayed)
     - cron: '17 13 * * *'
@@ -33,27 +35,30 @@ jobs:
       - name: Collect new public deal posts
         run: python scripts/update_deals.py
       - name: Commit daily snapshot and history
+        shell: bash
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/latest.json data/history.json
-          if ! git diff --staged --quiet; then
+          # A workflow is also triggered by an initial upload, so another
+          # change may reach main after checkout. Start from the newest data.
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            python scripts/update_deals.py
+            git add data/latest.json data/history.json
+            if git diff --staged --quiet; then
+              break
+            fi
             git commit -m "Refresh coupon discovery $(date -u +%Y-%m-%d)"
-            # Include any commits that landed after this run checked out.
-            # If the remote changes on the first try, retry a rebased push.
-            for attempt in 1 2 3; do
-              git fetch origin main
-              git rebase origin/main
-              if git push origin HEAD:main; then
-                break
-              fi
-              if [ "$attempt" -eq 3 ]; then
-                echo "Could not push the daily snapshot after 3 attempts" >&2
-                exit 1
-              fi
-              sleep 2
-            done
-          fi
+            if git push origin HEAD:main; then
+              break
+            fi
+            if [ "$attempt" -eq 3 ]; then
+              echo "Could not publish daily data after 3 attempts" >&2
+              exit 1
+            fi
+            sleep 2
+          done
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
         with:
