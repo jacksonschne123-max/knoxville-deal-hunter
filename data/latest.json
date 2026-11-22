@@ -1,0 +1,13 @@
+{
+  "schema_version": 2,
+  "checked_at": null,
+  "last_successful_at": null,
+  "collector": "RSS discovery; not retailer-account checkout verification",
+  "sources": [],
+  "leads": [],
+  "reviewed_deals": [],
+  "changes": {"new":0,"changed":0,"no_longer_in_feed":0,"total_leads":0,"sources_successful":0,"sources_total":2},
+  "new_ids": [],
+  "updated_ids": [],
+  "note": "Waiting for the first scheduled GitHub Actions collection. No live deals have been confirmed."
+}
