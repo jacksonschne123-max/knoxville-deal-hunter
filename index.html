@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07131a"><meta name="description" content="Knoxville Deal Hunter: public coupon deal rankings, term checks, and multi-transaction rewards optimizer.">
+<title>Knoxville Deal Hunter · Coupon Intelligence</title><style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root{color-scheme:dark;--bg:#07131a;--panel:#0e1c24;--panel2:#14252d;--line:#263b43;--muted:#8da5ad;--white:#eef8f6;--mint:#b0ff81;--green:#3ae3a1;--blue:#7fc7ff;--orange:#ffcf8b;font-family:'DM Sans',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--white)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse 75% 23% at 90% 0,rgba(45,110,114,.14),transparent),var(--bg);min-width:320px}button,input,select{font:inherit}button{cursor:pointer}a{color:inherit}.app-shell{display:grid;grid-template-columns:248px minmax(0,1fr);min-height:100vh}.sidebar{background:#09181e;border-right:1px solid #21353b;padding:28px 16px 16px;display:flex;flex-direction:column;position:sticky;top:0;height:100vh}.logo{display:flex;align-items:center;gap:11px;text-decoration:none;font-family:'Space Grotesk';font-size:17px;font-weight:700;letter-spacing:-.8px;margin:1px 4px 46px}.logo-icon{background:var(--mint);color:#0a1b17;border-radius:13px;display:grid;place-items:center;width:41px;height:41px;font-weight:700;font-size:25px}.logo-highlight{color:var(--mint)}.logo small{display:block;color:#6e9f9a;letter-spacing:2px;font-family:'DM Sans';font-size:8px;margin-top:3px}.side-caption,.small-label{font-size:10px;letter-spacing:2.3px;color:#638b91;font-weight:800}.side-caption{margin:0 14px 11px}.nav-list{display:grid;gap:6px;margin-bottom:32px}.nav-item{background:transparent;color:#a8bbc0;border:1px solid transparent;padding:13px 12px;display:flex;gap:11px;align-items:center;border-radius:11px;font-size:13px;font-weight:650;text-align:left;width:100%}.nav-item>span{font-size:17px}.nav-item b{margin-left:auto;font-size:9px;color:#8cadac;background:#17313a;padding:4px 6px;border-radius:5px}.nav-item:hover{background:#13282e}.nav-item.active{background:#17362e;border-color:#2b5e48;color:#c7ffbd}.nav-item.active b{color:var(--mint);background:#26563a}.store-rail{display:flex;flex-wrap:wrap;gap:8px;padding:5px 10px;align-content:start}.store-chip{border:1px solid #294249;color:#a7babd;font-size:11px;padding:6px 9px;border-radius:8px}.store-chip.more{color:#7db7a4}.sidebar-bottom{margin-top:auto;border:1px solid #27413d;border-radius:12px;padding:12px;display:flex;gap:10px;align-items:center;background:#0d2322}.sidebar-bottom strong{font-size:12px;display:block}.sidebar-bottom small{font-size:10px;color:#89a4a1}.pulse{background:var(--mint);width:8px;height:8px;border-radius:50%;box-shadow:0 0 10px #b0ff81}.content{min-width:0;padding:0 clamp(18px,4vw,66px);max-width:1650px;width:100%;margin:0 auto}.topbar{display:flex;justify-content:space-between;align-items:center;padding:27px 0 25px;border-bottom:1px solid #21343d;gap:12px}.eyebrow,.top-date{font-size:10px;letter-spacing:1.8px;font-weight:700;color:#82a3aa}.top-date{color:#a8bab9}.date-dot{display:inline-block;height:5px;width:5px;background:var(--mint);border-radius:50%;vertical-align:middle;margin:0 7px}.view{display:none;padding-top:32px}.view.active{display:block}.intro{min-height:282px;display:grid;grid-template-columns:1.5fr .8fr;gap:22px;align-items:stretch;padding-bottom:22px}.intro>div:first-child{align-self:center}.kicker{color:var(--mint);font-size:11px;font-weight:800;letter-spacing:2.5px}.sparkle{font-size:16px;margin-left:5px}h1,h2,h3{font-family:'Space Grotesk',system-ui;letter-spacing:-1px}h1{font-size:clamp(35px,5vw,59px);line-height:1.1;margin:12px 0;color:#f1f8f5;font-weight:700}h1 em{font-style:normal;color:var(--mint)}.intro p,.page-intro p{font-size:13px;color:#a1b8bb;max-width:565px;line-height:1.65}.primary{display:flex;align-items:center;justify-content:space-between;gap:25px;background:var(--mint);color:#071d18;border:0;border-radius:10px;padding:12px 17px;font-weight:800;font-size:12px;margin-top:20px;transition:transform .2s}.primary:hover{transform:translateY(-2px);background:#c6ffa5}.hero-stat{background:linear-gradient(130deg,#163e37,#0f2828);border:1px solid #39705d;border-radius:18px;padding:26px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center;min-height:205px}.hero-stat:after{content:'%';position:absolute;right:-22px;bottom:-65px;font-size:250px;font-weight:900;opacity:.045;color:#c8ffb4}.hero-caption,.hero-foot{color:#a6c9ba;font-size:10px;font-weight:750;letter-spacing:1.5px}.big-percent{font-family:'Space Grotesk';font-weight:700;font-size:clamp(53px,7vw,90px);letter-spacing:-7px;line-height:1.25;color:var(--mint)}.hero-store{font-size:13px;font-weight:700;max-width:260px;z-index:1}.hero-foot{margin-top:20px;color:#78ac9f;letter-spacing:0}.notice{display:flex;align-items:flex-start;gap:12px;border:1px solid #66503a;border-radius:12px;background:#2a261f;color:#f3ddb5;padding:13px 15px;margin:5px 0 19px}.notice-icon{border:1px solid #bd9254;border-radius:50%;width:21px;height:21px;min-width:21px;display:grid;place-items:center;color:#ffd894;font-weight:800;font-size:12px}.notice strong{font-size:12px}.notice p{font-size:12px;color:#cdbda2;line-height:1.55;margin:4px 0 0}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin:0 0 34px}.stat{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:18px;min-width:0}.stat .num{font-family:'Space Grotesk';font-weight:700;font-size:28px;color:#edf9f2;margin:7px 0 5px}.stat small{font-size:11px;color:#8ea6a9}.stat .glyph{float:right;color:#8db3a1}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:14px}.section-head h2,.plan-head h2{font-size:22px;margin:0 0 4px}.section-head p{margin:0;color:#8ca7ae;font-size:12px}.chip{border:1px solid #35614b;background:#143127;color:var(--mint);padding:8px 10px;border-radius:7px;letter-spacing:1.3px;font-size:9px;font-weight:800;white-space:nowrap}.filters{display:flex;gap:9px;margin-bottom:14px;flex-wrap:wrap;align-items:center}.search-wrap{display:flex;align-items:center;border:1px solid #314850;border-radius:10px;background:#101e26;padding:0 12px;flex:1;min-width:220px}.search-wrap span{font-size:24px;color:#7c9b9f}.search-wrap input{border:0!important;background:transparent!important;flex:1;min-width:80px}.filters input,.filters select,.fields input{font-size:12px;color:#e4f2f1;background:#111f27;border:1px solid #314850;border-radius:9px;padding:12px;outline:none}.filters select{max-width:220px}.filters input:focus,.filters select:focus,.fields input:focus{border-color:#8febad}.toggle{display:flex;gap:6px;align-items:center;font-size:11px;color:#9cbbc0;white-space:nowrap}.toggle input{accent-color:var(--mint)}.table-scroll{border:1px solid #2b424b;border-radius:13px;overflow-x:auto;background:#0c1b24}.deal-table{border-collapse:collapse;width:100%;min-width:860px}.deal-table th{background:#12252e;color:#7c9da5;font-size:9px;letter-spacing:1.2px;text-align:left;font-weight:800;padding:14px 12px}.deal-table td{border-top:1px solid #263942;padding:13px 12px;font-size:12px;color:#b3c6c9}.deal-table tbody tr{cursor:pointer;transition:background .15s}.deal-table tbody tr:hover{background:#163039}.deal-title{color:#f4faf8;font-size:12px;font-weight:700;display:block;min-width:150px}.deal-sub{font-size:10px;color:#799ba2;display:block;margin-top:5px}.rank{color:var(--mint);font-weight:800;font-family:'Space Grotesk';font-size:15px;display:inline-block;width:26px}.badge{display:inline-block;padding:5px 8px;border-radius:7px;background:#1c343d;color:#a6d8e4;font-size:10px;font-weight:750;white-space:nowrap}.badge.CVS{color:#ffb6b6;background:#3d252a}.badge.Walgreens{color:#adceff;background:#243452}.badge.Publix{color:#bbf4c8;background:#1c3d2c}.badge.Kroger{color:#bed5ff;background:#253b54}.money{font-family:'Space Grotesk';font-weight:650;color:#dbeae9;white-space:nowrap}.positive{color:var(--mint)!important;font-weight:800}.discount{color:var(--mint);font-family:'Space Grotesk';font-weight:800;font-size:16px}.quality{font-size:9px;color:#aec9bb;background:#1d382d;padding:4px 6px;border-radius:5px;white-space:nowrap}.quality.risk{background:#493129;color:#ffbf98}.quality.conditional{background:#373726;color:#edd798}.arrow{color:#678a8e;font-size:19px}.footnote{color:#79999d;font-size:11px;line-height:1.6;margin:12px 1px 35px}.page-intro{margin:14px 0 24px}.page-intro h1{font-size:clamp(34px,4.2vw,54px)}.planner-layout{display:grid;grid-template-columns:minmax(310px,.85fr) minmax(360px,1.15fr);gap:16px;margin:22px 0}.card{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:22px}.store-select{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:11px}.store-select button{background:#152730;border:1px solid #34505a;color:#a6bfbd;border-radius:10px;text-align:left;padding:12px 14px;font-weight:700}.store-select button.selected{background:#204a3a;border-color:#74ba8d;color:#d7ffca}.store-select small{display:block;color:#8eb6a2;margin-top:4px;font-size:10px}.hint{font-size:11px;line-height:1.5;color:#8aa9ad}.tiny{font-size:10px}.planner-deals{max-height:430px;overflow:auto;display:grid;gap:7px;padding-right:3px}.planner-choice{display:flex;align-items:flex-start;gap:10px;padding:12px;background:#122630;border:1px solid #2a424e;border-radius:9px;cursor:pointer}.planner-choice:has(input:checked){background:#1b3e35;border-color:#4b9472}.planner-choice input{accent-color:var(--mint);margin-top:4px}.planner-choice strong{display:block;font-size:12px}.planner-choice small{display:block;font-size:10px;color:#91aeb3;margin-top:4px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:13px}.fields label{font-size:11px;color:#a5bec0;display:grid;gap:6px}.fields input{width:100%}.block{width:100%;margin-top:16px}.plan-head{display:flex;justify-content:space-between;gap:8px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:15px}.plan-head h2{margin-top:6px}.status{color:var(--mint);background:#1d4134;border-radius:7px;padding:7px 9px;font-size:10px;font-weight:800}.status.warn{color:var(--orange);background:#483b27}.empty{border:1px dashed #3b5756;border-radius:10px;padding:46px 20px;text-align:center;color:#829ea0;font-size:13px;margin-top:18px}.result-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:18px 0}.result-metric{background:#142a30;border:1px solid #2b454c;border-radius:10px;padding:12px}.result-metric b{display:block;color:var(--mint);font-size:22px;font-family:'Space Grotesk'}.result-metric span{font-size:10px;color:#90acb1}.plan-step{position:relative;border:1px solid #31524e;background:#122d2c;border-radius:11px;margin:12px 0;padding:16px}.step-label{font-size:9px;color:var(--mint);letter-spacing:1.8px;font-weight:750}.plan-step h3{font-size:15px;margin:6px 0 12px}.step-calc{display:flex;gap:8px;justify-content:space-between;flex-wrap:wrap;font-size:11px;color:#a1babd}.step-calc strong{color:#f0fff3}.wallet-row{color:#a5c2b3;font-size:11px;margin-top:10px}.connector{height:13px;width:1px;background:#568b78;margin:-12px auto -12px}.audit-highlight{border:1px solid #31513b;background:linear-gradient(115deg,#122c26,#0e2325);border-radius:13px;padding:20px;margin:20px 0 30px;color:#c3e1d5;font-size:12px;line-height:1.6}.audit-highlight strong{color:var(--mint);font-size:14px}.audit-highlight p{margin:6px 0 0}.watch-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-bottom:30px}.watch-card{border:1px solid #2c444a;background:#11212a;border-radius:12px;padding:18px}.watch-head{display:flex;align-items:center;justify-content:space-between;gap:8px}.watch-card h3{font-size:15px;margin:14px 0 8px}.watch-card p{font-size:11px;line-height:1.65;color:#9bb4b6}.watch-card .value{font-family:'Space Grotesk';font-size:21px;color:var(--mint);font-weight:750}.watch-foot{display:flex;justify-content:space-between;align-items:center;font-size:10px;color:#8ba4a6;gap:8px;margin-top:14px}.watch-foot a,.policy-card a,.source-link{color:#9edfc0;text-decoration:none;font-weight:700}.watch-foot a:hover,.policy-card a:hover,.source-link:hover{text-decoration:underline}.method-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}.method-grid h2{font-size:20px;margin-top:0}.method-grid p{font-size:12px;line-height:1.65;color:#9cb7b8}.formula{font-family:'Space Grotesk';font-size:12px;background:#19342e;border:1px solid #3e6953;padding:13px;border-radius:9px;margin:9px 0;color:#ceffb9}.checklist{color:#acc6c2;font-size:12px;line-height:2;list-style:none;padding:0}.rules-head{margin-top:34px}.policy-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.policy-card{padding:17px;border:1px solid var(--line);border-radius:12px;background:#11232a}.policy-card h3{margin:0 0 7px;font-size:15px}.policy-card p{color:#9eb6b9;font-size:11px;line-height:1.55}.policy-card a{font-size:11px}.footer{border-top:1px solid #263c40;padding:24px 0 34px;font-size:10px;letter-spacing:1px;color:#77999a;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}dialog{background:#10232c;color:#e8f5f3;border:1px solid #456258;border-radius:16px;max-width:560px;width:calc(100vw - 30px);max-height:85vh;padding:28px;box-shadow:0 30px 100px #000b}dialog::backdrop{background:#03120fdd}.dialog-close{position:absolute;top:15px;right:17px;background:transparent;border:0;color:#abc7c3;font-size:16px}.detail-title{font-family:'Space Grotesk';font-size:25px;max-width:440px;margin:14px 0}.detail-calcs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0}.detail-cell{background:#173139;border-radius:9px;padding:13px}.detail-cell span{display:block;font-size:10px;color:#a2b9b7;margin-bottom:7px}.detail-cell strong{font-family:'Space Grotesk';font-size:21px}.detail-notes{border-left:3px solid #b0ff81;padding:12px 15px;background:#1b302a;color:#c7dfd5;font-size:12px;line-height:1.7}.detail-hint{font-size:12px;color:#b5c9c8;line-height:1.6}.detail-source{margin-top:18px;font-size:12px}button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--mint);outline-offset:3px}
+@media(max-width:1170px){.app-shell{grid-template-columns:205px minmax(0,1fr)}.sidebar{padding:24px 12px}.content{padding:0 24px}.logo{font-size:15px}.intro{grid-template-columns:1.25fr .9fr}}
+@media(max-width:980px){.planner-layout,.method-grid{grid-template-columns:1fr}.sidebar{position:static;height:auto}.store-rail{display:none}.sidebar .side-caption{display:none}.sidebar-bottom{display:none}.nav-list{margin:0}.nav-item{padding:12px 10px}.logo{margin-bottom:22px}.intro{grid-template-columns:1fr .8fr}.stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.app-shell{display:block}.sidebar{border-right:0;border-bottom:1px solid #25413e;padding:14px 14px 8px}.logo{margin:0 0 13px;font-size:15px}.logo-icon{width:35px;height:35px}.nav-list{display:flex;overflow:auto;gap:5px;padding-bottom:5px}.nav-item{font-size:11px;white-space:nowrap;flex:0 0 auto;gap:6px;padding:10px}.nav-item b{display:none}.content{padding:0 15px}.topbar{padding:15px 0}.top-date{font-size:9px;text-align:right}.eyebrow{font-size:8px}.intro{grid-template-columns:1fr;min-height:0}.hero-stat{min-height:160px}.big-percent{font-size:75px}.stats{gap:8px}.stat{padding:13px}.stat .num{font-size:24px}.section-head{align-items:flex-start}.section-head .chip{display:none}.watch-grid,.policy-grid{grid-template-columns:1fr}.notice{margin-top:10px}.page-intro{margin-top:0}.plan-results{min-height:250px}}
+
+
+/* Daily digest and scheduled feed health */
+.sync-banner{margin:16px 0 21px;padding:13px 16px;background:#14262a;border:1px solid #42635a;border-radius:12px;font-size:12px;color:#cbdfd9}
+.sync-banner.warn{border-color:#665044;color:#f8d5a2;background:#2b2525}.sync-banner.good{border-color:#3b7155;color:#b7fad3}
+.daily-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:18px 0 22px}
+.quiet-btn{background:#19313a;border:1px solid #37515b;color:#def1ed;border-radius:10px;padding:11px 15px;font-size:12px;font-weight:650}
+.daily-state{color:#b6cdcd;font-size:12px}.daily-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin:18px 0}
+.daily-stat{background:#10252a;border:1px solid #274148;border-radius:12px;padding:18px 16px}.daily-stat strong{display:block;color:#c3ff95;font:700 28px 'Space Grotesk',sans-serif}.daily-stat span{font-size:11px;color:#a4bbc0}
+.daily-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;margin-bottom:18px}.daily-panel{background:#0d2127;border:1px solid #29414a;border-radius:14px;padding:18px;margin-bottom:18px}
+.daily-panel h2{font:700 18px 'Space Grotesk',sans-serif;margin:0 0 14px}.daily-panel p{line-height:1.55}.digest-list{display:grid;gap:9px}.digest-item{background:#152b32;border:1px solid #2d454c;border-radius:10px;padding:12px;font-size:12px;line-height:1.5}.digest-item strong{color:#f1faf7}.digest-item small{color:#99b7b7;display:block;margin-top:4px}.digest-item.error{border-color:#7e594f}
+.daily-heading{display:flex;align-items:start;justify-content:space-between;gap:12px;flex-wrap:wrap}.daily-heading input{background:#142b33;border:1px solid #35505b;border-radius:9px;padding:11px;color:#eef8f6;min-width:260px}.muted{font-size:12px;color:#9db6ba;line-height:1.65}
+.daily-leads{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.lead-card{border:1px solid #345058;background:#132b31;border-radius:12px;padding:15px;display:flex;flex-direction:column;gap:8px}.lead-card h3{font-size:14px;line-height:1.4;margin:0}.lead-card p{margin:0;color:#a7c0c0;font-size:12px;line-height:1.55}.lead-card a{font-size:12px;color:#b8ff98;font-weight:700;margin-top:auto}.lead-meta{font-size:11px;color:#8cb4b3}.lead-signal{display:inline-block;border-radius:20px;padding:3px 8px;background:#26403d;color:#c0e4bd;font-size:10px;margin-right:4px;margin-top:4px}.daily-placeholder{border:1px dashed #345258;border-radius:10px;padding:24px;color:#a9c3c4;font-size:13px;line-height:1.7}
+@media(max-width:850px){.daily-grid,.daily-leads{grid-template-columns:1fr}.daily-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style></head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="logo" href="#rankings" aria-label="Knoxville Deal Hunter home"><span class="logo-icon">%</span><span>DEAL<span class="logo-highlight">HUNTER</span><small>KNOXVILLE, TENNESSEE</small></span></a>
+      <div class="side-caption">YOUR WORKSPACE</div>
+      <nav class="nav-list" aria-label="Dashboard sections">
+        <button class="nav-item active" data-view="rankings"><span>🏆</span> Deal rankings <b id="navCount">35</b></button>
+        <button class="nav-item" data-view="planner"><span>🔄</span> Transaction strategy <b>NEW</b></button>
+        <button class="nav-item" data-view="updates"><span>📡</span> Daily updates <b id="updateNewCount">0</b></button>
+        <button class="nav-item" data-view="watch"><span>🔎</span> Other store offers</button>
+        <button class="nav-item" data-view="method"><span>🛡️</span> Rules & audit</button>
+      </nav>
+      <div class="side-caption">RETAILER COVERAGE</div><div id="storeRail" class="store-rail"></div>
+      <div class="sidebar-bottom"><div class="pulse"></div><div><strong>Scheduled updates</strong><small id="sidebarSync">Daily feed ready · requires scheduled hosting</small></div></div>
+    </aside>
+    <main class="content">
+      <header class="topbar"><div class="eyebrow">SMART SAVINGS / KNOXVILLE METRO</div><span class="top-date">DAILY FEED <span class="date-dot"></span> AUTO-SNAPSHOT + OPEN CHECK</span></header>
+      <section id="rankings" class="view active">
+        <div class="sync-banner" id="syncBanner" role="status">Checking the most recently published daily snapshot…</div>
+        <div class="intro"><div><div class="kicker">THE DEAL BOARD <span class="sparkle">✦</span></div><h1>Find the deal.<br><em>Keep the difference.</em></h1><p>Ranked savings from Knoxville-area retailers, with the fine print attached. Future rewards, store credits and external rebates are kept separate.</p><button class="primary" id="jumpPlanner">Build a transaction plan <span>↗</span></button></div><div class="hero-stat"><div class="hero-caption">BEST PUBLISHED SAVINGS</div><div id="bestPercent" class="big-percent">—</div><div id="bestTitle" class="hero-store">Checking offers…</div><div class="hero-foot">Illustrative matchup · verify your local store</div></div></div>
+        <div class="notice"><span class="notice-icon">!</span><div><strong>Important: prices are researched, not register-verified.</strong><p>Numerical rankings appear only for deals manually reviewed on the current day. Older coupon research is available in clearly labeled archive mode. Feed headlines are not automatically treated as stackable offers.</p></div></div>
+        <div class="stats" id="stats"></div>
+        <div class="section-head"><div><h2>All ranked deals</h2><p>Highest effective savings at the top. Click any deal to inspect every assumption.</p></div><span class="chip">NO IMAGINARY STACKS</span></div>
+        <div class="filters"><label class="search-wrap"><span>⌕</span><input id="search" type="search" placeholder="Search deals, brands, categories…" autocomplete="off" aria-label="Search deals"></label><select id="filterStore" aria-label="Filter retailer"><option value="">All retailers</option></select><select id="sort" aria-label="Sort deals"><option value="percent">Savings: highest %</option><option value="dollars">Savings: most dollars</option><option value="lowest">Effective cost: lowest</option><option value="checkout">Cash at checkout: lowest</option></select><label class="toggle"><input type="checkbox" id="showRisks"> Include disputed stacks</label></div>
+        <div class="table-scroll"><table class="deal-table"><thead><tr><th>RANK / DEAL</th><th>RETAILER</th><th>REGULAR</th><th>PAY TODAY</th><th>REWARDS</th><th>EFFECTIVE COST</th><th>SAVED</th><th></th></tr></thead><tbody id="dealRows"></tbody></table></div>
+        <div class="footnote">Savings = regular price − (checkout − future rewards/rebates). A negative effective price indicates a rewards surplus, <strong>not cash paid to you</strong>. Tax, rebate delays, fuel points and availability are excluded.</div>
+      </section>
+      <section id="planner" class="view">
+        <div class="page-intro"><span class="kicker">TRANSACTION LAB</span><h1>Make your rewards<br><em>work twice.</em></h1><p>Pick several offers. The optimizer tests different checkout orders, rolling eligible rewards into later purchases while tracking real cash required.</p></div>
+        <div class="notice"><span class="notice-icon">!</span><div><strong>Forecast, not a guarantee.</strong><p>Only same-store rewards can roll. This assumes rewards post after checkout and can be spent at face value; voucher denomination, exclusions, personalized coupons and individual store terms may change the actual result.</p></div></div>
+        <div class="planner-layout"><div class="card panel-left"><div class="small-label">STEP 01 / CHOOSE A STORE</div><div class="store-select" id="plannerStores"><button class="selected" data-store="CVS">CVS <small>ExtraBucks</small></button><button data-store="Walgreens">Walgreens <small>Cash & RR</small></button></div><div class="small-label" style="margin-top:22px">STEP 02 / SELECT 2–6 OFFERS</div><p class="hint">Check deals you are actually eligible to purchase. Each offer can be used once in this strategy.</p><div id="plannerDeals" class="planner-deals"></div><div class="small-label" style="margin-top:20px">STEP 03 / STARTING BALANCES</div><div class="fields" id="startingFields"></div><div class="fields"><label>Total cash budget ($)<input id="cashBudget" type="number" min="0" step="0.01" value="50"></label></div><button id="optimize" class="primary block">Find best transaction order <span>↗</span></button><p class="hint tiny">Only accounts and promotions you verify should be used for a real shopping plan.</p></div>
+        <div class="card plan-results"><div class="plan-head"><div><div class="small-label">OPTIMIZATION RESULTS</div><h2 id="planTitle">Your best path</h2></div><span id="planStatus" class="status">READY</span></div><div id="planOutput" class="plan-output"><div class="empty">Select two or more eligible offers, then run the strategy optimizer.</div></div></div></div>
+        <div class="audit-highlight"><strong>⚡ Why order matters</strong><p>A large reward earned in transaction #1 may lower cash required for transaction #2. The calculator compares all permutations of up to six selected offers and favors the lowest overall cash outlay. It does not repeat a weekly-limited promotion or transfer rewards to another retailer.</p></div>
+      </section>
+      <section id="updates" class="view">
+      <div class="page-intro"><span class="kicker">DAILY COLLECTION & CHANGE DIGEST</span><h1>Since you<br><em>last checked.</em></h1><p>Every time you open this dashboard, it checks for the newest published feed, compiles changes since your previous visit, and surfaces recently discovered offers for review. A GitHub Actions collector runs daily after deployment.</p></div>
+      <div class="daily-toolbar"><button id="checkUpdates" class="primary" type="button">Check for published updates ↻</button><button id="toggleArchive" class="quiet-btn" type="button">Show historical demonstration deals</button><span id="dailyState" class="daily-state">Not checked yet</span></div>
+      <div class="daily-stats" id="dailyStats"></div>
+      <div class="daily-grid"><div class="daily-panel"><h2>What's new since your last visit</h2><div id="dailyDigest" class="digest-list"></div></div><div class="daily-panel"><h2>Collector source health</h2><div id="sourceHealth" class="digest-list"></div></div></div>
+      <div class="daily-panel"><div class="daily-heading"><div><h2>Recently discovered deal leads</h2><p class="muted">Ranked by preliminary review priority, then recency. Scores are NOT verified discounts or purchase advice.</p></div><input id="liveSearch" placeholder="Search retailers and deal titles" aria-label="Search fresh deal leads"></div><div id="liveLeads" class="daily-leads"></div></div>
+      <div class="daily-panel"><h2>How updates work</h2><p class="muted">The scheduled collector checks publicly available RSS feeds, identifies retailer-specific leads, and records additions/changes. Only separately verified deals with current-day dates and complete basket math may appear in the numerical rankings. RSS omission does not prove expiration. Some retailers block automated access, and personalized coupons require your own account verification.</p><p class="muted">The static website itself cannot perform unrestricted background scraping. Automatic daily updates start only after the included repository is deployed and its scheduled GitHub Actions workflow runs successfully.</p></div>
+      </section>
+      <section id="watch" class="view"><div class="page-intro"><span class="kicker">EXPANDING THE SEARCH · RESEARCH ARCHIVE</span><h1>More stores.<br><em>More opportunities.</em></h1><p>Offers from Target, Walmart, Dollar General, Food City and other major retailers that are useful but lack enough price/eligibility data for trustworthy rankings.</p></div><div class="notice"><span class="notice-icon">i</span><div><strong>These are real advertised offer types, not complete price comparisons.</strong><p>We do not manufacture a starting price to make a coupon look like a better deal. Where a retailer requires an account or store selection, the offer stays on this watchlist until the full math can be checked.</p></div></div><div class="filters"><label class="search-wrap"><span>⌕</span><input id="watchSearch" type="search" placeholder="Find coupons, store, category…" aria-label="Search other store offers"></label><select id="watchStore" aria-label="Filter other store offers"><option value="">All stores</option></select></div><div id="watchGrid" class="watch-grid"></div></section>
+      <section id="method" class="view"><div class="page-intro"><span class="kicker">TRANSPARENT BY DESIGN</span><h1>Check the math.<br><em>Read the terms.</em></h1><p>This project is deliberately conservative about incompatible coupons, spend thresholds, rewards, and rebates.</p></div>
+      <div class="method-grid"><div class="card"><h2>How rankings are computed</h2><div class="formula">Effective cost = pay at checkout − store rewards − external rebates</div><div class="formula">Savings % = (regular − effective) ÷ regular × 100</div><p>Rewards are shown individually so you can distinguish discounts today from credit you may use later. We never treat a $10 ExtraBucks award as $10 immediate cash off.</p></div><div class="card"><h2>What we verify—and cannot yet</h2><ul class="checklist"><li>✓ Published weekly-ad prices, deal quantities and dates</li><li>✓ Identified manufacturer, store and external rebate components</li><li>✓ Obvious threshold mistakes and suspicious coupon mismatches flagged</li><li>◌ Your account-specific clipping and personalized offers</li><li>◌ Knoxville store inventory, precise UPC and checkout total</li><li>◌ Automatic scraping or continuous background updates</li></ul></div></div>
+      <h2 class="rules-head">Official store policies</h2><div id="policyGrid" class="policy-grid"></div><div class="audit-highlight"><strong>💡 Case study: the $0.60 Kroger “money-maker”</strong><p>An Idahoan potatoes pouch is shown at $0.99 with a potential $1.59 Ibotta rebate. However the 99¢ Kroger price requires buying at least five eligible sale items. Our ranked deal includes the five-item basket ($4.95 upfront) rather than falsely claiming the single potatoes item can be purchased alone for a 60¢ gain.</p></div>
+      </section>
+      <footer class="footer">KNOXVILLE DEAL HUNTER <span>Independent research tool • Not affiliated with retailers • Check offer terms</span></footer>
+    </main>
+  </div>
+  <dialog id="detail"><button id="closeDetail" class="dialog-close" aria-label="Close">✕</button><div id="detailInner"></div></dialog>
+  <script>
+// Research snapshot assembled 2026-11-16. Values are public ad matchups,
+// not point-of-sale or user-account verification.
+const AS_OF = '2026-11-16';
+const SOURCES = {
+  cvs: 'https://thekrazycouponlady.com/tips/store-hacks/cvs-weekly-ad',
+  wag: 'https://thekrazycouponlady.com/tips/store-hacks/walgreens-weekly-ad',
+  kroger: 'https://thekrazycouponlady.com/tips/store-hacks/kroger-weekly-ad',
+  publix: 'https://thekrazycouponlady.com/tips/store-hacks/publix-weekly-ad',
+  target: 'https://www.target.com/help/articles/promotions-coupons/current-promotions',
+  dg: 'https://www.dollargeneral.com/deals/coupons',
+  foodcity: 'https://www.foodcity.com/',
+  walmart: 'https://www.walmart.com/help/article/walmart-cash/77662758469249c29aed82885d5e554f'
+};
+// q=0 = straightforward advertised sale, q=1 = coupons/rebates or account check,
+// q=2 = disputed calculation; excluded unless explicitly enabled.
+const d = (id,store,item,category,regular,checkout,earn,expires,q,terms,source,extra={}) => ({
+  id,store,item,category,regular,checkout,earn,expires,q,terms,source,...extra
+});
+let DEALS = [
+  d('cvs-revlon','CVS','2 Revlon nail enamel bottles','Beauty',12.38,8.38,{eb:5},'2026-11-28',1,'Buy two eligible Revlon items to earn $5 ExtraBucks (advertised weekly limit one). $4 store coupon may be targeted to your ExtraCare account.',SOURCES.cvs,{minimum:2,limit:1}),
+  d('cvs-tide','CVS','2 Tide detergent products','Laundry',34.78,17.98,{eb:8},'2026-11-21',1,'Two separate qualifying $4 coupons must attach to different items. Spend-$25 earn-$8 ExtraBucks terms, quantity and subtotal qualification must all be checked.',SOURCES.cvs,{minimum:2,limit:1,threshold:25}),
+  d('cvs-charmin','CVS','2 Charmin toilet-paper packs','Household',34.48,22.98,{eb:8,rebate:5},'2026-11-21',1,'Spend $25 earn $8 ExtraBucks; separate $5 P&G rebate is external, not available for the next register transaction. Check receipt and rebate eligibility.',SOURCES.cvs,{minimum:2,threshold:25}),
+  d('cvs-lacolors','CVS','L.A. COLORS makeup set','Beauty',9.99,9.99,{eb:5},'2026-11-28',1,'Buy one qualifying set, earn $5 ExtraBucks; advertised weekly limit one.',SOURCES.cvs,{minimum:1,limit:1}),
+  d('cvs-neutrogena','CVS','2 Neutrogena makeup-wipe packs','Beauty',13.98,13.98,{eb:7},'2026-11-28',1,'Buy two participating Neutrogena cosmetics items, earn $7 ExtraBucks. Verify makeup wipes are part of the tagged assortment.',SOURCES.cvs,{minimum:2,limit:1}),
+  d('cvs-gillette','CVS','2 Gillette Fusion5 razors','Personal care',27.78,17.78,{eb:8},'2026-11-28',1,'Illustrated $10 off $25 shaving offer and buy-two ExtraBucks promotion. Coupon may be account-specific and threshold is before/after coupons depending on terms.',SOURCES.cvs,{minimum:2,threshold:25}),
+  d('cvs-trash','CVS','2 Total Home trash-bag boxes','Household',24.98,12.49,{},'2026-11-28',0,'Buy one get one free on eligible Total Home trash-bag boxes. Confirm equal-size eligible packages.',SOURCES.cvs,{minimum:2}),
+  d('cvs-febreze','CVS','Febreze plug oil warmer','Household',13.79,4.99,{},'2026-11-22',1,'Sale plus a qualifying $5 digital coupon reported in ad matchup. Match the exact plug/warmers SKU.',SOURCES.cvs),
+  d('cvs-softsoap','CVS','2 Softsoap hand soaps','Personal care',7.78,5.83,{eb:3},'2026-11-28',2,'Original public roundup supplies effective price but checkout/coupon breakdown needs direct verification; exclude from strict rankings.',SOURCES.cvs,{minimum:2}),
+  d('wag-colgate','Walgreens','2 Colgate oral-care products','Personal care',14.28,6,{rr:5},'2026-11-21',1,'Two separate qualifying $3 manufacturer coupons on different items, then buy two earn $5 Register Rewards. Verify exact SKU, paper coupon count, and reward print.',SOURCES.wag,{minimum:2,limit:1}),
+  d('wag-tresemme','Walgreens','2 TRESemmé shampoos','Personal care',14.98,11.24,{rr:5},'2026-11-21',1,'Buy one get one 50% off and buy two get $5 Register Rewards. Confirm eligible sizes and coupon conditions.',SOURCES.wag,{minimum:2}),
+  d('wag-pampers','Walgreens','3 Pampers Swaddlers packs','Baby',44.97,30,{rr:10},'2026-11-21',1,'Buy three get $10 Register Rewards, with $3 off two coupon reflected in reported checkout. Check participating counts.',SOURCES.wag,{minimum:3}),
+  d('wag-jergens','Walgreens','2 Jergens moisturizers','Beauty',23.98,23.98,{wc:10},'2026-11-21',1,'Spend $20 on eligible Jergens earn $10 Walgreens Cash. Planner does NOT spend Walgreens Cash on this transaction because spend-booster rules differ.',SOURCES.wag,{minimum:2,threshold:20,spendBooster:true}),
+  d('wag-pg','Walgreens','4 P&G laundry products','Laundry',23.96,10,{},'2026-11-21',1,'Buy four specific eligible P&G laundry items at the advertised bundle price; not necessarily every P&G laundry SKU.',SOURCES.wag,{minimum:4}),
+  d('wag-coke','Walgreens','4 Coca-Cola 12-packs','Groceries',47.96,23.98,{},'2026-11-21',0,'Buy two get two free on eligible Coca-Cola varieties and sizes.',SOURCES.wag,{minimum:4}),
+  d('wag-hello','Walgreens','2 Hello toothpaste tubes','Personal care',13.98,9,{rr:5},'2026-11-21',2,'Conflict: cited coupon wording references Colgate, not Hello. Do not assume the purported coupon is valid for Hello.',SOURCES.wag,{minimum:2}),
+  d('wag-schick','Walgreens','2 Schick razors','Personal care',22.98,17.98,{rr:10},'2026-11-21',2,'Spend-$20 Register Rewards promotion plus coupons may fall below qualifying subtotal; validate each restriction.',SOURCES.wag,{minimum:2,threshold:20}),
+  d('kro-potato-basket','Kroger','5-item $0.99 mix (includes Idahoan potatoes)','Groceries',7.90,4.95,{rebate:1.59},'2026-11-17',1,'Money-maker trap: Idahoan alone is $0.99 after the BUY-5 requirement and may earn $1.59 Ibotta, but you MUST buy 5 qualifying items. Basket example: Idahoan, Pillsbury cake mix, Kroger pasta, Campbell gravy, Swanson broth. Rebate account/SKU eligibility is unverified.',SOURCES.kroger,{minimum:5,highlight:'The single potato item shows -$0.60 after rebate; the full required basket still costs $3.36.'}),
+  d('kro-progresso','Kroger','8 Progresso soup cans','Groceries',23.92,10,{},'2026-11-17',0,'Eight participating Progresso 18.5 oz soups for $10; check participating flavors and exact quantity.',SOURCES.kroger,{minimum:8}),
+  d('kro-lunch','Kroger','Oscar Mayer Lunchables kit','Groceries',2.29,0.99,{},'2026-11-17',1,'$0.99 digital coupon price for eligible Lunchables or P3; coupon must be clipped to loyalty card.',SOURCES.kroger),
+  d('kro-cheese','Kroger','Kroger shredded cheese 8 oz','Groceries',2.49,1.29,{},'2026-11-17',1,'Weekly digital coupon price $1.29 for eligible Kroger cheese; clip before checkout.',SOURCES.kroger),
+  d('kro-butter','Kroger','Land O Lakes butter 16 oz','Groceries',5.29,2.99,{},'2026-11-17',1,'Sale price $4.49 plus reported $1.50 Kroger-app coupon for qualifying 16 oz pack.',SOURCES.kroger),
+  d('kro-lacroix','Kroger','6 LaCroix sparkling-water 8-packs','Groceries',32.94,16.47,{},'2026-11-17',0,'Buy three get three free on eligible LaCroix eight-packs. All six qualifying packages required.',SOURCES.kroger,{minimum:6}),
+  d('kro-doritos','Kroger','4 Doritos tortilla-chip bags','Groceries',21.96,10.98,{},'2026-11-17',0,'Buy two get two free on eligible 9.25 oz Doritos varieties.',SOURCES.kroger,{minimum:4}),
+  d('kro-mug','Kroger','6 Mug Root Beer 12-packs','Groceries',71.94,35.97,{rebate:6.25},'2026-11-17',1,'Buy three get three free plus five $1.25 Ibotta claims in third-party example; confirm five eligible redemptions before treating rebate as available.',SOURCES.kroger,{minimum:6}),
+  d('kro-chex','Kroger','3 General Mills Chex cereals','Groceries',14.97,5.97,{},'2026-11-17',1,'Mix-and-match mega sale buy three or more participating items; $2 off each qualifying Chex ($4.99 regular, $3.99 shelf, $1.99 final).',SOURCES.kroger,{minimum:3}),
+  d('pub-chicken','Publix','2 Nature Raised Farms chicken nuggets','Groceries',25.98,10.99,{rebate:4},'2026-11-17',1,'BOGO two 28-oz bags, one $2 Publix store coupon and two $2 Ibotta rebates. Rebate is external and may have offer limits or exclusivity rules.',SOURCES.publix,{minimum:2}),
+  d('pub-soup','Publix','4 Progresso soup cans','Groceries',13.56,5.78,{rebate:1},'2026-11-17',1,'BOGO two pairs, $1 off four store coupon, and two $0.50 Fetch rebate redemptions as reported. Confirm Fetch rebate quantities and receipt eligibility.',SOURCES.publix,{minimum:4}),
+  d('pub-kraft','Publix','2 Kraft Signature shredded cheeses','Groceries',7.22,3.61,{rebate:0.75},'2026-11-17',1,'BOGO two 8-oz bags. One $0.75 Ibotta rebate shown; eligibility/quantity must be checked in the app.',SOURCES.publix,{minimum:2}),
+  d('pub-marie','Publix','2 Marie Callender’s Swedish meatballs','Groceries',15.96,7.98,{},'2026-11-17',0,'BOGO two eligible 26-oz meal packages; no coupon stack assumed.',SOURCES.publix,{minimum:2}),
+  d('pub-rosina','Publix','2 Rosina meatball packs','Groceries',24.98,12.49,{},'2026-11-17',0,'BOGO two eligible 26-oz packs.',SOURCES.publix,{minimum:2}),
+  d('pub-celentano','Publix','2 Celentano cheese ravioli bags','Groceries',13.58,6.79,{},'2026-11-17',0,'BOGO two participating 24-oz packages.',SOURCES.publix,{minimum:2}),
+  d('pub-green','Publix','2 Green Giant Simply Steam veggie bags','Groceries',3.98,1.99,{},'2026-11-17',0,'BOGO two eligible 7-oz frozen veggie bags.',SOURCES.publix,{minimum:2}),
+  d('pub-corn','Publix','2 Del Monte whole-kernel corn cans','Groceries',3.58,1.79,{},'2026-11-17',0,'BOGO two eligible Del Monte cans.',SOURCES.publix,{minimum:2}),
+  d('pub-diapers','Publix','2 White Cloud diaper packs','Baby',17.50,8.75,{},'2026-11-17',0,'BOGO two eligible White Cloud Ultra Comfort 37-count packs.',SOURCES.publix,{minimum:2}),
+];
+const ARCHIVED_DEALS = DEALS.map(x=>({...x}));
+DEALS = [];
+let archiveMode = false;
+const WATCH = [
+  {store:'Target',name:'Buy 2 Tide detergent pods for $10',value:'2 for $10',type:'Multi-buy',expires:'Unconfirmed',why:'Current promotions page lists the bundle, but regular SKU prices and per-store applicability are not supplied.',source:SOURCES.target},
+  {store:'Target',name:'Buy 4 Dial antibacterial hand soaps for $8',value:'4 for $8',type:'Multi-buy',expires:'Unconfirmed',why:'Target publishes the multi-buy offer; regular price unknown, so a percentage ranking would be misleading.',source:SOURCES.target},
+  {store:'Target',name:'$10 gift card with $100 specialty gift cards',value:'$10 gift card',type:'Future credit',expires:'Check offer',why:'Promotional specialty gift-card terms, eligible brands, validity and redemption restrictions require checking. Not spendable at another store.',source:'https://www.target.com/c/top-deals/adult-coloring-books/circle-week/-/N-4xw74Zpb345'},
+  {store:'Target',name:'5% Target Circle Card discount',value:'5% eligible',type:'Card benefit',expires:'Ongoing terms',why:'Applies to eligible amount tendered to a qualifying Circle Card, net of discounts and certain promotional gift-card values.',source:SOURCES.target},
+  {store:'Dollar General',name:'Spend $25 on Charmin, Bounty or Puffs, save $5',value:'$5 off $25',type:'Threshold coupon',expires:'2026-11-21',why:'Qualifying items, subtotal basis and conflicts with other DG store discounts must be confirmed; no assumed stacking.',source:SOURCES.dg},
+  {store:'Dollar General',name:'Spend $30 on Gain fabric care, save $5',value:'$5 off $30',type:'Threshold coupon',expires:'2026-11-21',why:'Manufacturer coupons might be available but combination rules and eligible SKUs need validation.',source:SOURCES.dg},
+  {store:'Dollar General',name:'Save $3 on two qualifying Scott packages',value:'$3 coupon',type:'Manufacturer coupon',expires:'2026-11-21',why:'Requires two specified Scott 1000/ComfortPlus configurations; price unavailable from public results.',source:'https://www.dollargeneral.com/deals/coupons'},
+  {store:'Food City',name:'Old Spice Whole Body deodorant',value:'$2 coupon',type:'Digital coupon',expires:'2026-11-21',why:'One qualifying unit; exact listed UPCs in official coupon terms. Food City says paper and digital coupons cannot both be used on one item.',source:SOURCES.foodcity},
+  {store:'Food City',name:'Tide EVO detergent, 22 ct',value:'$4 coupon',type:'Digital coupon',expires:'2026-11-21',why:'Specific 22-count package. Regular shelf price needed before final-cost ranking.',source:SOURCES.foodcity},
+  {store:'Food City',name:'Frozen Butterball turkey with $50 purchase',value:'96¢/lb',type:'Basket threshold',expires:'Check offer',why:'Published 96¢/lb turkey offer requires a $50 purchase; alternative free turkey requires $50 qualifying gift-card purchase. Cannot rank turkey price alone.',source:SOURCES.foodcity},
+  {store:'Walmart',name:'Walmart Cash manufacturer offers',value:'Offer-dependent',type:'Future credit',expires:'Varies',why:'Offers are claimed inside a Walmart account; reward only arrives after order fulfillment, and substituted/returned items may not qualify. No public SKU price/reward pair verified yet.',source:SOURCES.walmart},
+  {store:'ALDI',name:'Weekly ALDI Finds / grocery specials',value:'Browse ad',type:'Weekly ad',expires:'Varies',why:'No coupon+SKU price combination verified for this snapshot.',source:'https://www.aldi.us/weekly-specials'},
+  {store:'Sam’s Club',name:'Instant Savings',value:'Browse offers',type:'Member prices',expires:'Varies',why:'Final savings depend on membership, item and location. Need Knoxville warehouse catalog.',source:'https://www.samsclub.com/instant-savings'},
+  {store:'Costco',name:'Warehouse savings',value:'Browse offers',type:'Member prices',expires:'Varies',why:'Membership and warehouse-specific pricing required. Not combined with coupon deals in rankings.',source:'https://www.costco.com/online-offers.html'},
+  {store:'Ingles',name:'Weekly grocery specials',value:'Browse ad',type:'Weekly ad',expires:'Varies',why:'Price-specific Knoxville terms not independently verified in this pass.',source:'https://www.ingles-markets.com/'},
+  {store:'Sprouts',name:'Weekly specials and digital coupons',value:'Browse ad',type:'Weekly ad',expires:'Varies',why:'Requires local store selected for products and prices.',source:'https://www.sprouts.com/weekly-ad/'},
+];
+const POLICY = [
+  {store:'CVS',url:'https://www.cvs.com/extracare-cvs/couponpolicy',text:'Store coupons and third-party manufacturer coupons may stack when terms allow; ExtraBucks cannot be redeemed for cash or gift cards. Weekly limits still apply.'},
+  {store:'Walgreens',url:'https://www.walgreens.com/topic/help/generalhelp/coupon_policy_main.jsp',text:'One Register Reward per offer/customer/transaction and eligible-item rules apply. Register Rewards and Walgreens Cash are separate balances.'},
+  {store:'Kroger',url:'https://www.kroger.com/pr/weekly-digital-deals',text:'Weekly digital deals usually require a clipped coupon and some advertised prices need multiple qualifying items.'},
+  {store:'Publix',url:'https://www.publix.com/savings/all-deals/bogo',text:'Buy-one-get-one savings are promotional; manufacturer coupons and external rebates require separate eligible-item checks.'},
+  {store:'Target',url:SOURCES.target,text:'Circle Bonuses and coupons may be personalized and require activation. Circle Card 5% is applied after eligible discounts and promotional gift-card values.'},
+  {store:'Dollar General',url:SOURCES.dg,text:'Digital coupon spend thresholds and eligible items require checking at checkout; do not assume all $5-off coupons stack.'},
+  {store:'Food City',url:SOURCES.foodcity,text:'Digital and paper coupons may not be combined on the same product; qualifying UPCs and quantities are important.'},
+  {store:'Walmart',url:SOURCES.walmart,text:'Claim manufacturer offers before purchase. Walmart Cash is awarded after fulfillment and may be lost on substituted or returned orders.'}
+];
+
+const round = v => Math.round((v + Number.EPSILON) * 100) / 100;
+const totalRewards = d => round(Object.values(d.earn || {}).reduce((s,n) => s + n, 0));
+const effective = d => round(d.checkout - totalRewards(d));
+const savings = d => round(d.regular - effective(d));
+const percent = d => d.regular > 0 ? 100 * savings(d) / d.regular : 0;
+
+const choose = (arr, take, out = []) => {
+  if (!arr.length) return [out];
+  return arr.flatMap((item,i) => choose([...arr.slice(0,i), ...arr.slice(i+1)],take,[...out,item])).filter(x=>x.length===take);
+};
+
+const applyWallet = (deal, balances, store) => {
+  const next = {...balances};
+  let remaining = round(deal.checkout);
+  const applied = {};
+  const keys = store==='CVS' ? ['eb'] : ['rr','wc'];
+  // Conservative: don't redeem Walgreens Cash in another Walgreens Cash
+  // spend-threshold promotion. Such combinations need account/receipt proof.
+  for (const key of keys) {
+    if (deal.spendBooster && key === 'wc') continue;
+    const use = round(Math.min(remaining, Math.max(0, next[key] || 0)));
+    if (use > 0) {applied[key]=use; next[key]=round(next[key]-use); remaining=round(remaining-use);}
+  }
+  for (const [key,amount] of Object.entries(deal.earn || {})) {
+    if (key==='rebate') continue; // External rebates don't roll at the register.
+    next[key]=round((next[key] || 0)+amount);
+  }
+  return {applied,balances:next,cash:remaining,checkout:deal.checkout,reward:deal.earn || {}};
+};
+
+function simulate(order,starting={}) {
+  if (!order.length) return {steps:[],cash:0,ending:{},maxCheckout:0};
+  const store=order[0].store;
+  if (order.some(d=>d.store!==store)) throw new Error('Rewards cannot transfer between retailers.');
+  if (new Set(order.map(d=>d.id)).size!==order.length) throw new Error('A weekly-limited offer cannot be repeated in this planner.');
+  let balances={eb:round(Math.max(0,starting.eb||0)),rr:round(Math.max(0,starting.rr||0)),wc:round(Math.max(0,starting.wc||0))};
+  let cash=0, maxCheckout=0;
+  const steps=order.map((d,index)=>{
+    const tx=applyWallet(d,balances,store);
+    balances=tx.balances;
+    cash=round(cash+tx.cash);
+    maxCheckout=Math.max(maxCheckout,tx.cash);
+    return {index:index+1,deal:d,...tx,cumulative:cash};
+  });
+  return {steps,cash,ending:balances,maxCheckout,store};
+}
+
+function optimize(order,starting={},budget=Infinity) {
+  if (order.length>7) throw new Error('Select no more than seven offers.');
+  if (order.some(d=>d.store!==order[0]?.store)) throw new Error('Choose deals from one store for each plan.');
+  const permutations=choose(order,order.length);
+  const ranked=permutations.map(p=>simulate(p,starting)).sort((a,b)=>a.cash-b.cash || a.maxCheckout-b.maxCheckout || (b.steps[0].reward.eb||0)-(a.steps[0].reward.eb||0));
+  const feasible=ranked.filter(p=>p.cash<=budget+0.001);
+  return {best:feasible[0] || ranked[0] || null,feasible:feasible.length>0,considered:ranked.length,alternative:ranked[1] || null};
+}
+
+const $ = id => document.getElementById(id);
+const dollars = n => `${n < 0 ? '−' : ''}${Math.abs(n).toFixed(2)}`;
+const escapeHTML = v => String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const rewardLabels={eb:'ExtraBucks',rr:'Register Rewards',wc:'Walgreens Cash',rebate:'Outside rebate'};
+const activeDeals=()=>DEALS.filter(d=>(archiveMode || (d.expires >= todayLocal() && d.verified_at === todayLocal())) && (d.q!==2 || $('showRisks').checked));
+const labelQuality = d => d.q===0 ? '<span class="quality">AD SALE</span>' : d.q===1 ? '<span class="quality conditional">CHECK TERMS</span>' : '<span class="quality risk">DISPUTED</span>';
+const rewardText = d => Object.keys(d.earn).length ? Object.entries(d.earn).map(([k,v])=>`${dollars(v)} ${rewardLabels[k]}`).join(' + ') : 'No future reward';
+const retailerBadge = store => `<span class="badge ${escapeHTML(store)}">${escapeHTML(store)}</span>`;
+
+function initNavigation(){
+  function switchTo(id){
+    document.querySelectorAll('.view').forEach(el=>el.classList.toggle('active',el.id===id));
+    document.querySelectorAll('.nav-item').forEach(el=>el.classList.toggle('active',el.dataset.view===id));
+    window.scrollTo({top:0,behavior:'instant'});
+  }
+  document.querySelectorAll('[data-view]').forEach(button=>button.onclick=()=>switchTo(button.dataset.view));
+  $('jumpPlanner').onclick=()=>switchTo('planner');
+  $('storeRail').innerHTML=['CVS','Walgreens','Kroger','Publix','Target','Walmart','Dollar General','Food City'].map(s=>`<span class="store-chip">${s}</span>`).join('')+'<span class="store-chip more">+ ALDI, Costco, Sam’s, Ingles, Sprouts</span>';
+}
+
+function renderRankings(){
+  const text=$('search').value.toLowerCase().trim(), store=$('filterStore').value,sort=$('sort').value;
+  const arr=activeDeals().filter(d=>(!store||d.store===store)&&(!text||`${d.item} ${d.store} ${d.category}`.toLowerCase().includes(text)));
+  arr.sort((a,b)=>sort==='dollars'?savings(b)-savings(a):sort==='lowest'?effective(a)-effective(b):sort==='checkout'?a.checkout-b.checkout:percent(b)-percent(a));
+  $('dealRows').innerHTML=arr.map((d,i)=>`<tr data-id="${d.id}" tabindex="0" aria-label="Read ${escapeHTML(d.item)} details"><td><span class="rank">${String(i+1).padStart(2,'0')}</span><span class="deal-title">${escapeHTML(d.item)}</span><span class="deal-sub">${escapeHTML(d.category)} · ends ${d.expires.slice(5)} · ${labelQuality(d)}</span></td><td>${retailerBadge(d.store)}</td><td class="money">${dollars(d.regular)}</td><td class="money">${dollars(d.checkout)}</td><td><span class="money">${dollars(totalRewards(d))}</span><span class="deal-sub">${Object.keys(d.earn).map(k=>({eb:'EB',rr:'RR',wc:'WC',rebate:'rebate'}[k])).join(' + ')||'No reward'}</span></td><td class="money ${effective(d)<=0?'positive':''}">${dollars(effective(d))}</td><td><span class="discount">${Math.round(percent(d))}%</span><span class="deal-sub">${dollars(savings(d))} value</span></td><td class="arrow">›</td></tr>`).join('') || `<tr><td colspan="8">No matching offers. Try another store or search.</td></tr>`;
+  document.querySelectorAll('#dealRows tr[data-id]').forEach(row=>{row.onclick=()=>openDetail(row.dataset.id);row.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openDetail(row.dataset.id)}}});
+  const clean=activeDeals().filter(d=>d.q!==2);
+  $('stats').innerHTML=`<div class="stat"><span class="glyph">⌗</span><div class="small-label">RANKED DEALS</div><div class="num">${arr.length}</div><small>${archiveMode?'Historical practice examples':'Current-day verified pricing only'}</small></div><div class="stat"><span class="glyph">◈</span><div class="small-label">RANKED RETAILERS</div><div class="num">${new Set(clean.map(d=>d.store)).size}</div><small>Additional retailers in watchlist</small></div><div class="stat"><span class="glyph">↗</span><div class="small-label">BEST POTENTIAL SAVINGS</div><div class="num">${clean.length?Math.round(Math.max(...clean.map(percent)))+'%':'—'}</div><small>Requires conditions to be met</small></div><div class="stat"><span class="glyph">$</span><div class="small-label">VALIDATED MONEY-MAKERS</div><div class="num">0</div><small>No checkout-confirmed surplus</small></div>`;
+  const best=clean.sort((a,b)=>percent(b)-percent(a))[0];
+  $('bestPercent').textContent=best?`${Math.round(percent(best))}%`:'—';
+  $('bestTitle').textContent=best?`${best.store} · ${best.item}`:'Awaiting current-day checked deals';
+  $('navCount').textContent=DEALS.length;
+}
+
+function openDetail(id){
+  const d=DEALS.find(x=>x.id===id);if(!d)return;
+  $('detailInner').innerHTML=`${retailerBadge(d.store)} ${labelQuality(d)}<h2 class="detail-title">${escapeHTML(d.item)}</h2><p class="detail-hint">${escapeHTML(d.category)} · Advertised through ${escapeHTML(d.expires)} · ${d.minimum?`Minimum ${d.minimum} qualifying items`: 'See product rules'}${d.threshold?` · Qualifying spend ${dollars(d.threshold)}`:''}</p><div class="detail-calcs"><div class="detail-cell"><span>Regular price</span><strong>${dollars(d.regular)}</strong></div><div class="detail-cell"><span>Pay at register</span><strong>${dollars(d.checkout)}</strong></div><div class="detail-cell"><span>Future credits / rebates</span><strong>${dollars(totalRewards(d))}</strong></div><div class="detail-cell"><span>Effective cost</span><strong class="positive">${dollars(effective(d))}</strong></div></div><div class="detail-notes"><strong>Full coupon / promotion assumptions</strong><p>${escapeHTML(d.terms)}</p></div>${d.highlight?`<p class="detail-hint"><strong>⚠️ ${escapeHTML(d.highlight)}</strong></p>`:''}<p class="detail-hint"><strong>Reward breakdown:</strong> ${escapeHTML(rewardText(d))}. These are not necessarily instantly usable or redeemable for cash. Your account, store, SKU and transaction limits must be checked.</p><div class="detail-source"><a class="source-link" href="${d.source}" target="_blank" rel="noopener noreferrer">Open original published matchup ↗</a></div>`;
+  $('detail').showModal();
+}
+
+let plannerStore='CVS';
+function renderPlannerChoices(){
+  const eligible=activeDeals().filter(d=>d.store===plannerStore && d.q!==2 && totalRewards(d)>0 && (d.earn.eb||d.earn.rr||d.earn.wc));
+  $('plannerDeals').innerHTML=eligible.map(d=>`<label class="planner-choice"><input type="checkbox" value="${d.id}"><span><strong>${escapeHTML(d.item)}</strong><small>Pay ${dollars(d.checkout)} → get ${rewardText(d)} · ${d.q===1?'Account / item eligibility required':'Sale'}</small></span></label>`).join('');
+  $('startingFields').innerHTML=plannerStore==='CVS'?`<label>Starting ExtraBucks ($)<input id="startEb" type="number" min="0" step="0.01" value="0"></label>`:`<label>Starting Register Rewards ($)<input id="startRr" type="number" min="0" step="0.01" value="0"></label><label>Starting Walgreens Cash ($)<input id="startWc" type="number" min="0" step="0.01" value="0"></label>`;
+  $('planStatus').textContent='READY';$('planStatus').classList.remove('warn');
+  $('planOutput').innerHTML='<div class="empty">Choose two or more promotions, then optimize the checkout sequence.</div>';
+}
+
+function renderPlan(){
+  const checked=[...document.querySelectorAll('#plannerDeals input:checked')].map(el=>DEALS.find(d=>d.id===el.value));
+  if(checked.length<2){$('planOutput').innerHTML='<div class="empty">Select at least two offers so the strategy can actually roll rewards.</div>';return}
+  if(checked.length>6){$('planOutput').innerHTML='<div class="empty">Choose at most six deals per optimization.</div>';return}
+  const field=id=>round(Math.max(0,Number($(id)?.value)||0));
+  const starting=plannerStore==='CVS'?{eb:field('startEb')}:{rr:field('startRr'),wc:field('startWc')};
+  const budget=field('cashBudget');const result=optimize(checked,starting,budget);const b=result.best;
+  const usable=Object.entries(b.ending).filter(([k])=>plannerStore==='CVS'?k==='eb':['rr','wc'].includes(k)).map(([k,v])=>`${dollars(v)} ${rewardLabels[k]}`).join(' · ');
+  $('planStatus').textContent=result.feasible?'WITHIN BUDGET':'OVER BUDGET';$('planStatus').classList.toggle('warn',!result.feasible);
+  $('planTitle').textContent=`${checked.length} deals · ${result.considered} orders tested`;
+  const warning=result.feasible?'':`<div class="notice"><span class="notice-icon">!</span><div><strong>Not feasible with ${dollars(budget)}.</strong><p>The cheapest sequence needs ${dollars(b.cash)} in cumulative cash. Increase your budget or choose fewer deals.</p></div></div>`;
+  $('planOutput').innerHTML=warning+`<div class="result-metrics"><div class="result-metric"><b>${dollars(b.cash)}</b><span>Cumulative cash out</span></div><div class="result-metric"><b>${dollars(b.maxCheckout)}</b><span>Largest single checkout</span></div><div class="result-metric"><b>${dollars(Object.entries(b.ending).filter(([k])=>plannerStore==='CVS'?k==='eb':['rr','wc'].includes(k)).reduce((s,[,v])=>s+v,0))}</b><span>Rewards remaining</span></div></div>${b.steps.map((s,i)=>`<div class="plan-step"><div class="step-label">TRANSACTION ${i+1}</div><h3>${escapeHTML(s.deal.item)}</h3><div class="step-calc"><span>Checkout ${dollars(s.checkout)}</span><span>Apply rewards −${dollars(Object.values(s.applied).reduce((a,v)=>a+v,0))}</span><span>Pay <strong>${dollars(s.cash)}</strong></span></div><div class="wallet-row">Earn now: ${escapeHTML(rewardText(s.deal))}<br>Reward wallet after: ${escapeHTML(plannerStore==='CVS'?`${dollars(s.balances.eb)} ExtraBucks`:`${dollars(s.balances.rr)} RR · ${dollars(s.balances.wc)} Walgreens Cash`)}</div></div>`).join('')}<p class="hint">Ending wallet: ${escapeHTML(usable)}. Cash out excludes tax. Rewards are estimated immediately available and shown as divisible balances for simulation. Check voucher denominations before shopping.</p>`;
+}
+
+function renderWatch(){
+  const q=$('watchSearch').value.toLowerCase().trim(),store=$('watchStore').value;
+  const list=WATCH.filter(w=>(!store||w.store===store)&&(!q||`${w.name} ${w.store} ${w.type} ${w.why}`.toLowerCase().includes(q)));
+  $('watchGrid').innerHTML=list.map(w=>`<article class="watch-card"><div class="watch-head">${retailerBadge(w.store)}<span class="quality conditional">${escapeHTML(w.type)}</span></div><h3>${escapeHTML(w.name)}</h3><div class="value">${escapeHTML(w.value)}</div><p>${escapeHTML(w.why)}</p><div class="watch-foot"><span>Expires: ${escapeHTML(w.expires)}</span><a href="${w.source}" target="_blank" rel="noopener noreferrer">Official source ↗</a></div></article>`).join('') || '<p>No offers match this search.</p>';
+}
+
+function init(){
+  initNavigation();
+  const storeList=[...new Set(DEALS.map(d=>d.store))].sort();
+  $('filterStore').innerHTML+=[...storeList].map(s=>`<option>${escapeHTML(s)}</option>`).join('');
+  $('watchStore').innerHTML+=[...new Set(WATCH.map(d=>d.store))].sort().map(s=>`<option>${escapeHTML(s)}</option>`).join('');
+  ['search','filterStore','sort','showRisks'].forEach(id=>$(id).addEventListener('input',renderRankings));
+  ['watchSearch','watchStore'].forEach(id=>$(id).addEventListener('input',renderWatch));
+  $('plannerStores').querySelectorAll('button').forEach(btn=>btn.onclick=()=>{
+    plannerStore=btn.dataset.store;$('plannerStores').querySelectorAll('button').forEach(b=>b.classList.toggle('selected',b===btn));renderPlannerChoices();
+  });
+  $('optimize').onclick=renderPlan;
+  $('closeDetail').onclick=()=>$('detail').close();
+  $('detail').addEventListener('click',event=>{if(event.target===$('detail')) $('detail').close()});
+  $('policyGrid').innerHTML=POLICY.map(p=>`<article class="policy-card"><h3>${escapeHTML(p.store)}</h3><p>${escapeHTML(p.text)}</p><a href="${p.url}" target="_blank" rel="noopener noreferrer">Official policy ↗</a></article>`).join('');
+  renderRankings();renderPlannerChoices();renderWatch();
+}
+
+// Daily feed client: fetches the latest published data on every open, bypasses browser cache,
+// and compiles history since this browser's previous visit. No fake background collection.
+const todayLocal=()=>{const p=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());const part=k=>p.find(x=>x.type===k).value;return `${part('year')}-${part('month')}-${part('day')}`;};
+let dailyFeed=null, dailyHistory=[], previousSeen=null, checkInProgress=false;
+const asDate = iso => iso?new Date(iso).toLocaleString('en-US',{timeZone:'America/New_York',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}):'Never';
+function safeStoreGet(k){try{return localStorage.getItem(k)}catch{return null}}
+function safeStoreSet(k,v){try{localStorage.setItem(k,v)}catch{}}
+function validateData(d){
+ return d&&d.schema_version===2&&Array.isArray(d.leads)&&Array.isArray(d.reviewed_deals)&&Array.isArray(d.sources);
+}
+function setSyncStatus(message,kind='warn'){
+ const banner=$('syncBanner'); banner.className='sync-banner '+kind;banner.textContent=message;
+ $('dailyState').textContent=message;
+ $('sidebarSync').textContent=message.length>55?message.slice(0,55)+'…':message;
+}
+function renderDaily(){
+ const data=dailyFeed;
+ if(!data){
+  $('dailyStats').innerHTML='<div class="daily-placeholder">No published daily feed loaded yet.</div>';
+  $('dailyDigest').innerHTML='<div class="daily-placeholder">After deploying the included project and running its workflow, daily change reports appear here.</div>';
+  $('sourceHealth').innerHTML='<div class="daily-placeholder">The collector has not run on this website.</div>';
+  $('liveLeads').innerHTML='<div class="daily-placeholder">No current discovery feed available. Historical numerical deals are hidden by default.</div>';
+  return;
+ }
+ const good=data.sources.filter(x=>x.ok).length, fresh=data.leads.filter(x=>x.stage==='research_lead').length;
+ const seen=previousSeen && new Date(previousSeen).getTime();
+ const changes=dailyHistory.filter(x=>seen?new Date(x.checked_at).getTime()>seen:true);
+ const newCount=changes.reduce((n,x)=>n+(x.new||0),0),changeCount=changes.reduce((n,x)=>n+(x.changed||0),0);
+ $('updateNewCount').textContent=newCount;
+ $('dailyStats').innerHTML=[['NEW LEADS',newCount],['CHANGED POSTS',changeCount],['ACTIVE LEADS',fresh],['SOURCES OK',good+'/'+data.sources.length]].map(([label,value])=>`<div class="daily-stat"><strong>${escapeHTML(value)}</strong><span>${escapeHTML(label)}</span></div>`).join('');
+ $('dailyDigest').innerHTML=changes.length?changes.slice().reverse().map(x=>`<div class="digest-item"><strong>${escapeHTML(x.date)} · ${x.new} new · ${x.changed} updated</strong><small>${x.no_longer_in_feed} no longer in feed (NOT necessarily expired) · ${x.sources_successful}/${x.sources_total} feeds retrieved</small></div>`).join(''):'<div class="digest-item">No recorded changes since your last visit.</div>';
+ $('sourceHealth').innerHTML=data.sources.map(s=>`<div class="digest-item ${s.ok?'':'error'}"><strong>${s.ok?'✓':'!'} ${escapeHTML(s.name)}</strong><small>${s.ok?`${s.offers} retailer-tagged posts found`:`Collection unavailable: ${escapeHTML(s.error||'Unknown failure')}`}</small></div>`).join('')||'<div class="digest-item">No collector runs yet.</div>';
+ const q=$('liveSearch').value.toLowerCase().trim();
+ const list=data.leads.filter(x=>`${x.store} ${x.title} ${x.description}`.toLowerCase().includes(q));
+ $('liveLeads').innerHTML=list.slice(0,120).map(x=>`<article class="lead-card"><div class="lead-meta">${escapeHTML(x.store)} · ${escapeHTML(x.source)} · ${escapeHTML(asDate(x.published_at))} · priority ${Number(x.priority_score)||0}/100</div><h3>${escapeHTML(x.title)}</h3><p>${escapeHTML(x.description||'No description given')}</p><div>${(x.signals||[]).map(sig=>`<span class="lead-signal">${escapeHTML(sig)}</span>`).join('')}<span class="lead-signal">${x.stage==='stale_lead'?'STALE · NOT RECHECKED':'CHECK TERMS'}</span></div><a href="${escapeHTML(x.url)}" target="_blank" rel="noopener noreferrer">Open original offer ↗</a></article>`).join('')||'<div class="daily-placeholder">No retailer-tagged leads match, or the latest feed has no eligible posts.</div>';
+}
+async function loadDaily(force=false){
+ if(checkInProgress)return;checkInProgress=true;
+ setSyncStatus('Checking for the newest published daily snapshot…');
+ try{
+  const url=new URL('data/latest.json',location.href);
+  url.searchParams.set('t',Date.now());
+  const res=await fetch(url.toString(),{cache:'no-store'});
+  if(!res.ok)throw Error('Feed HTTP '+res.status);
+  const payload=await res.json();
+  if(!validateData(payload))throw Error('Feed missing required fields');
+  const historyUrl=new URL('data/history.json',location.href);
+  historyUrl.searchParams.set('t',Date.now());
+  const histRes=await fetch(historyUrl.toString(),{cache:'no-store'});
+  dailyHistory=histRes.ok?await histRes.json():[];
+  if(!Array.isArray(dailyHistory))dailyHistory=[];
+  previousSeen=safeStoreGet('kdh.last_seen_update');
+  dailyFeed=payload;
+  if(!archiveMode){
+    DEALS=payload.reviewed_deals.filter(d=>d.verified_at===todayLocal()&&d.expires>=todayLocal())
+      .map(d=>({...d,q:Math.min(1,d.q??1)}));
+    refreshDealStoreFilter();renderRankings();renderPlannerChoices();
+  }
+  const age=payload.checked_at?(Date.now()-new Date(payload.checked_at).getTime())/3600000:Infinity;
+  const success=payload.sources.some(x=>x.ok);
+  const stamp=asDate(payload.checked_at);
+  if(!payload.checked_at){setSyncStatus('Collector not yet activated: deploy the GitHub workflow and run it once.','warn');}
+  else if(!success){setSyncStatus(`Latest check ${stamp} · ALL SOURCES FAILED · no deals were reconfirmed`,'warn');}
+  else if(age>30){setSyncStatus(`Last published check: ${stamp} (${Math.round(age)}h ago). Daily refresh is overdue.`,'warn');}
+  else{setSyncStatus(`Latest published check: ${stamp} · ${payload.leads.length} research leads · ${payload.reviewed_deals.length} reviewed price deals`,'good');}
+  renderDaily();
+  if(payload.checked_at) safeStoreSet('kdh.last_seen_update',payload.checked_at);
+ }catch(error){
+  dailyFeed=null;
+  setSyncStatus(`No connected daily feed (${error.message}). Open the hosted GitHub Pages version after deployment; this file is not a live scraper.`,'warn');
+  renderDaily();
+ }finally{checkInProgress=false;}
+}
+function refreshDealStoreFilter(){
+ const selected=$('filterStore').value;
+ const stores=[...new Set(DEALS.map(d=>d.store))].sort();
+ $('filterStore').innerHTML='<option value="">All retailers</option>'+stores.map(s=>`<option value="${escapeHTML(s)}">${escapeHTML(s)}</option>`).join('');
+ if(stores.includes(selected))$('filterStore').value=selected;
+}
+function initDaily(){
+ $('checkUpdates').addEventListener('click',()=>loadDaily(true));
+ $('liveSearch').addEventListener('input',renderDaily);
+ $('toggleArchive').addEventListener('click',()=>{
+   archiveMode=!archiveMode;
+   DEALS=archiveMode?ARCHIVED_DEALS.slice():((dailyFeed?.reviewed_deals||[]).filter(d=>d.verified_at===todayLocal()&&d.expires>=todayLocal()).map(d=>({...d,q:Math.min(1,d.q??1)})));
+   $('toggleArchive').textContent=archiveMode?'Exit historical example mode':'Show historical demonstration deals';
+   refreshDealStoreFilter();renderRankings();renderPlannerChoices();
+   if(archiveMode)setSyncStatus('HISTORICAL EXAMPLES: November 16 research, NOT live offers. Do not shop from these figures.','warn');
+   else if(dailyFeed)setSyncStatus('Live mode restored. Only current-day verified deals appear in the rankings.','good');
+ });
+ renderDaily();loadDaily();
+ document.addEventListener('visibilitychange',()=>{
+   if(!document.hidden && (!dailyFeed?.checked_at || Date.now()-new Date(dailyFeed.checked_at).getTime()>3600000))loadDaily();
+ });
+}
+
+init();
+initDaily();
+
+</script>
+</body></html>
