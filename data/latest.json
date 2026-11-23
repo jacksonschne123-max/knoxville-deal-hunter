@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-22T15:45:35Z",
-  "last_successful_at": "2026-11-22T15:45:35Z",
+  "checked_at": "2026-11-23T14:30:05Z",
+  "last_successful_at": "2026-11-23T14:30:05Z",
   "collector": "RSS discovery; not retailer-account checkout verification",
   "sources": [
     {
@@ -9,14 +9,14 @@
       "name": "The Krazy Coupon Lady RSS",
       "ok": true,
       "offers": 306,
-      "checked_at": "2026-11-22T15:45:35Z"
+      "checked_at": "2026-11-23T14:30:05Z"
     },
     {
       "id": "slickdeals",
       "name": "Slickdeals frontpage RSS",
       "ok": true,
-      "offers": 2,
-      "checked_at": "2026-11-22T15:45:35Z"
+      "offers": 11,
+      "checked_at": "2026-11-23T14:30:05Z"
     }
   ],
   "leads": [
@@ -29,7 +29,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T15:58:00Z",
-      "discovered_at": "2026-11-22T15:45:35Z",
+      "discovered_at": "2026-11-23T14:30:05Z",
       "signals": [
         "Price/reward amount mentioned",
         "Mentions rewards"
@@ -47,7 +47,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T22:19:00Z",
-      "discovered_at": "2026-11-22T15:45:35Z",
+      "discovered_at": "2026-11-23T14:30:05Z",
       "signals": [
         "25% advertised",
         "Price/reward amount mentioned"
@@ -57,15 +57,15 @@
       "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
     },
     {
-      "id": "636669fd91dbbab535",
-      "store": "Walmart",
-      "title": "20' x 10' Ozark Trail Pop Up Canopy Tent w/ Wheeled Bag (White) $139 + Free S&H",
-      "description": "Available for shipping https://www.walmart.com/ip/Ozark-...om=/search",
-      "url": "https://slickdeals.net/f/20352516-20-x-10-ozark-trail-pop-up-canopy-tent-w-wheeled-bag-white-139-free-s-h",
+      "id": "473cf963a2af0d6899",
+      "store": "Costco",
+      "title": "Costco Members: Sony DualSense Wireless Controller + Charging Station (White) $70 + Free S&H",
+      "description": "https://www.costco.com/p/-/4000354051 $20 OFF $20 manufacturer's savings is valid 11/16/26 through 12/06/26. While supplies last. Limit 5 per member. Bluetooth Built In Adaptive Triggers &...",
+      "url": "https://slickdeals.net/f/20372649-playstation-dualsense-wireless-controller-and-charging-station-white-69-99-free-shipping-costco-com",
       "source": "Slickdeals frontpage RSS",
       "source_id": "slickdeals",
-      "published_at": "2026-11-22T13:36:49Z",
-      "discovered_at": "2026-11-22T15:45:35Z",
+      "published_at": "2026-11-23T13:55:31Z",
+      "discovered_at": "2026-11-23T14:30:05Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -74,15 +74,168 @@
       "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
     },
     {
-      "id": "17de0020c7c1066c6b",
-      "store": "Target",
-      "title": "845-Pc LEGO Star Wars Andor K-2SO Security Droid Building Toy $43.20 + Free S&H",
-      "description": "Lowest price for this item. $43.19 https://www.target.com/p/lego-sta...A-94152779",
-      "url": "https://slickdeals.net/f/20368371-lego-star-wars-andor-k-2so-security-droid-building-set-75434",
+      "id": "5f33fd6cf8588bd53a",
+      "store": "Walmart",
+      "title": "7-Pc WorkPro Carbon Steel Pliers Set w/ Comfort Grip Handles $13.60",
+      "description": "Great Star USA Direct via Walmart has *7-Piece WorkPro Carbon Steel Pliers Set* (W001306A) on sale for *$13.59*. *Shipping is free* w/ Walmart+ (free 30-day trial) or on orders of $35+.",
+      "url": "https://slickdeals.net/f/20375988-13-59-workpro-pliers-set-with-groove-joint-long-nose-slip-joint-linesman-and-diagonal-pliers-at-walmart-com",
       "source": "Slickdeals frontpage RSS",
       "source_id": "slickdeals",
-      "published_at": "2026-11-22T11:25:21Z",
-      "discovered_at": "2026-11-22T15:45:35Z",
+      "published_at": "2026-11-23T13:49:56Z",
+      "discovered_at": "2026-11-23T14:30:05Z",
+      "signals": [
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 8,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "a905a64969cfa98880",
+      "store": "Walmart",
+      "title": "Kirby Air Riders (Nintendo Switch 2 Digital Download) $30",
+      "description": "*Walmart* [walmart.com] has *Kirbyâ„¢ Air Riders - Nintendo Switch 2 [Digital]* for *$30*. *Price*: *$39.99* lower (57% savings) than the list price of *$69.99* *Customer reviews*: 3.5⭐ / 8...",
+      "url": "https://slickdeals.net/f/20373978-30-kirby-air-riders-nintendo-switch-2-digital-at-walmart",
+      "source": "Slickdeals frontpage RSS",
+      "source_id": "slickdeals",
+      "published_at": "2026-11-23T13:44:23Z",
+      "discovered_at": "2026-11-23T14:30:05Z",
+      "signals": [
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 8,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "89115b377881da12d7",
+      "store": "Walmart",
+      "title": "386-Pc LEGO Star Wars Kylo Ren's Command Shuttle Building Set $35 + Free S&H",
+      "description": "LEGO Star Wars Kylo Ren's Command Shuttle - Model Starship Building Kit For Adults 18+ - DIY Collectible Building Set - Gift for Birthdays - 75406 Shipping is free w/ Walmart+ or on orders of $35+ ...",
+      "url": "https://slickdeals.net/f/20373678-35-lego-star-wars-kylo-ren-s-command-shuttle-75406-at-walmart-com",
+      "source": "Slickdeals frontpage RSS",
+      "source_id": "slickdeals",
+      "published_at": "2026-11-23T13:35:04Z",
+      "discovered_at": "2026-11-23T14:30:05Z",
+      "signals": [
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 8,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "c345a5182c65528265",
+      "store": "Walmart",
+      "title": "Super Mario Party Jamboree + Jamboree TV (Switch 2 Digital Download) $30",
+      "description": "Sold by Walmart - Email Delivery - Must add to cart to see price https://www.walmart.com/ip/seort/17237253548",
+      "url": "https://slickdeals.net/f/20375823-super-mario-party-jamboree-jamboree-tv-switch-2-digital-download-30",
+      "source": "Slickdeals frontpage RSS",
+      "source_id": "slickdeals",
+      "published_at": "2026-11-23T13:32:50Z",
+      "discovered_at": "2026-11-23T14:30:05Z",
+      "signals": [
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 8,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "b32edf921b24222681",
+      "store": "Costco",
+      "title": "Costco Members: Switch 2 Console w/ 12-Month NSO + Mario Kart World Digital $520 + Free S&H",
+      "description": "https://www.costco.com/p/-/ninten...4201051302 $50 OFF $50 savings is valid 11/22/26 through 12/5/26. While supplies last. Limit 10 per member. Bundle Includes: Nintendo Switch 2 Console 12...",
+      "url": "https://slickdeals.net/f/20370228-costco-members-switch-2-console-w-12-month-nso-mario-kart-world-digital-520-free-s-h",
+      "source": "Slickdeals frontpage RSS",
+      "source_id": "slickdeals",
+      "published_at": "2026-11-23T13:17:32Z",
+      "discovered_at": "2026-11-23T14:30:05Z",
+      "signals": [
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 8,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "437203745dded319cd",
+      "store": "Walmart",
+      "title": "128GB 8.5\" Apple iPad Mini Wi-Fi Tablet w/ A20 Pro (Midnight or Starlight) $599 + Free S&H",
+      "description": "Other models are also discounted, but not as much. https://www.walmart.com/ip/iPad-n...1271153734",
+      "url": "https://slickdeals.net/f/20374890-apple-ipad-mini-8-a20-pro-wi-fi-128gb-for-599",
+      "source": "Slickdeals frontpage RSS",
+      "source_id": "slickdeals",
+      "published_at": "2026-11-23T13:10:04Z",
+      "discovered_at": "2026-11-23T14:30:05Z",
+      "signals": [
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 8,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "e51b282b7a0d8e1ffd",
+      "store": "Costco",
+      "title": "Costco In-Warehouse Offer: 5-Pk MIU Silicone Freezer Trays w/ Lids $14 (Pricing/Availability Will Vary)",
+      "description": "These MIU Silicone Freezer Trays with Lids are made for storing and freezing soup, broth, sauce, and ice. They come in ½ cup, 1 cup, and 2 cup mold sizes with lids. These flexible freezer trays are...",
+      "url": "https://slickdeals.net/f/20373423-costco-miu-silicone-freezer-trays-with-lids-5-pack-13-99",
+      "source": "Slickdeals frontpage RSS",
+      "source_id": "slickdeals",
+      "published_at": "2026-11-23T12:55:20Z",
+      "discovered_at": "2026-11-23T14:30:05Z",
+      "signals": [
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 8,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "4a01335b9016ba94b7",
+      "store": "Walmart",
+      "title": "The Blood of Dawnwalker: Day One Edition (PS5) $30 + Free S&H on $35+",
+      "description": "It shows OOS in browser, but on the app(logged in) shows in stock. 60% stock remaining when I post. https://www.walmart.com/ip/The-Bl...0082506524",
+      "url": "https://slickdeals.net/f/20374485-the-blood-of-dawnwalker-d1-playstation-5-game",
+      "source": "Slickdeals frontpage RSS",
+      "source_id": "slickdeals",
+      "published_at": "2026-11-23T12:31:07Z",
+      "discovered_at": "2026-11-23T14:30:05Z",
+      "signals": [
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 8,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "0627d21465516c95af",
+      "store": "Walmart",
+      "title": "Beats By Dr. Dre Solo Buds True Wireless Earbuds (Ivory) $34",
+      "description": "Beats by Dr. Dre Solo Buds Bluetooth In-Ear Earbuds, Ivory Shipping is free w/ Walmart+ or on orders of $35+ https://www.walmart.com/ip/Beats-...hbdg=L1800",
+      "url": "https://slickdeals.net/f/20373597-beats-by-dr-dre-solo-buds-bluetooth-in-ear-earbuds-ivory-34-at-walmart-com",
+      "source": "Slickdeals frontpage RSS",
+      "source_id": "slickdeals",
+      "published_at": "2026-11-23T12:25:19Z",
+      "discovered_at": "2026-11-23T14:30:05Z",
+      "signals": [
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 8,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "fa2b9cc84b70316d42",
+      "store": "Walmart",
+      "title": "Borderlands 4 (PS5) $15 + Free Pickup",
+      "description": "*Walmart* [walmart.com] has *Borderlands 4, PlayStation 5* for *$15*. *Price*: *$52.95* lower (78% savings) than the list price of *$67.95* *Customer reviews*: 4.6⭐ / 297 ratings Please...",
+      "url": "https://slickdeals.net/f/20374365-15-borderlands-4-playstation-5-at-walmart",
+      "source": "Slickdeals frontpage RSS",
+      "source_id": "slickdeals",
+      "published_at": "2026-11-23T12:22:28Z",
+      "discovered_at": "2026-11-23T14:30:05Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -99,7 +252,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T14:27:00Z",
-      "discovered_at": "2026-11-22T15:45:35Z",
+      "discovered_at": "2026-11-23T14:30:05Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -116,7 +269,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T17:48:00Z",
-      "discovered_at": "2026-11-22T15:45:35Z",
+      "discovered_at": "2026-11-23T14:30:05Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -133,7 +286,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T17:37:00Z",
-      "discovered_at": "2026-11-22T15:45:35Z",
+      "discovered_at": "2026-11-23T14:30:05Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -150,7 +303,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T15:41:00Z",
-      "discovered_at": "2026-11-22T15:45:35Z",
+      "discovered_at": "2026-11-23T14:30:05Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -167,7 +320,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T15:08:00Z",
-      "discovered_at": "2026-11-22T15:45:35Z",
+      "discovered_at": "2026-11-23T14:30:05Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -184,7 +337,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T16:58:00Z",
-      "discovered_at": "2026-11-22T15:45:35Z",
+      "discovered_at": "2026-11-23T14:30:05Z",
       "signals": [],
       "priority_score": 0,
       "stage": "research_lead",
@@ -199,7 +352,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T14:45:00Z",
-      "discovered_at": "2026-11-22T15:45:35Z",
+      "discovered_at": "2026-11-23T14:30:05Z",
       "signals": [],
       "priority_score": 0,
       "stage": "research_lead",
@@ -208,16 +361,28 @@
   ],
   "reviewed_deals": [],
   "changes": {
-    "date": "2026-11-22",
-    "checked_at": "2026-11-22T15:45:35Z",
-    "new": 0,
+    "date": "2026-11-23",
+    "checked_at": "2026-11-23T14:30:05Z",
+    "new": 11,
     "changed": 0,
-    "no_longer_in_feed": 0,
-    "total_leads": 11,
+    "no_longer_in_feed": 2,
+    "total_leads": 20,
     "sources_successful": 2,
     "sources_total": 2
   },
-  "new_ids": [],
+  "new_ids": [
+    "473cf963a2af0d6899",
+    "5f33fd6cf8588bd53a",
+    "a905a64969cfa98880",
+    "89115b377881da12d7",
+    "c345a5182c65528265",
+    "b32edf921b24222681",
+    "437203745dded319cd",
+    "e51b282b7a0d8e1ffd",
+    "4a01335b9016ba94b7",
+    "0627d21465516c95af",
+    "fa2b9cc84b70316d42"
+  ],
   "updated_ids": [],
   "note": "Ranked deal values are only allowed for manually reviewed deals checked today. Feed leads are not confirmed coupon stacks."
 }
