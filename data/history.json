@@ -18,5 +18,15 @@
     "total_leads": 20,
     "sources_successful": 2,
     "sources_total": 2
+  },
+  {
+    "date": "2026-11-24",
+    "checked_at": "2026-11-24T14:26:30Z",
+    "new": 5,
+    "changed": 0,
+    "no_longer_in_feed": 11,
+    "total_leads": 14,
+    "sources_successful": 2,
+    "sources_total": 2
   }
 ]
