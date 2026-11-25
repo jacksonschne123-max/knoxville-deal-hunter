@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-24T14:26:30Z",
-  "last_successful_at": "2026-11-24T14:26:30Z",
+  "checked_at": "2026-11-25T14:28:45Z",
+  "last_successful_at": "2026-11-25T14:28:45Z",
   "collector": "RSS discovery; not retailer-account checkout verification",
   "sources": [
     {
@@ -9,14 +9,14 @@
       "name": "The Krazy Coupon Lady RSS",
       "ok": true,
       "offers": 306,
-      "checked_at": "2026-11-24T14:26:30Z"
+      "checked_at": "2026-11-25T14:28:45Z"
     },
     {
       "id": "slickdeals",
       "name": "Slickdeals frontpage RSS",
       "ok": true,
-      "offers": 5,
-      "checked_at": "2026-11-24T14:26:30Z"
+      "offers": 8,
+      "checked_at": "2026-11-25T14:28:45Z"
     }
   ],
   "leads": [
@@ -29,7 +29,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T15:58:00Z",
-      "discovered_at": "2026-11-24T14:26:30Z",
+      "discovered_at": "2026-11-25T14:28:45Z",
       "signals": [
         "Price/reward amount mentioned",
         "Mentions rewards"
@@ -47,7 +47,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T22:19:00Z",
-      "discovered_at": "2026-11-24T14:26:30Z",
+      "discovered_at": "2026-11-25T14:28:45Z",
       "signals": [
         "25% advertised",
         "Price/reward amount mentioned"
@@ -57,15 +57,15 @@
       "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
     },
     {
-      "id": "c84f04584702caff4a",
-      "store": "Walmart",
-      "title": "Select Locations: Conair Hair Brushes: Grip & Style Small Metal Round Hairbrush $0.40 & More + Free Pickup",
-      "description": "Conair Grip & Style Hot Curling Brush, Blow-Dry Styling Brush .48 https://www.walmart.com/ip/Conair...h/10421884 Conair Grip & Style Small Metal Round Hairbrush, Nylon Bristles and Rubber Handle...",
-      "url": "https://slickdeals.net/f/20383326-conair-hair-brushes-42-cents",
+      "id": "b98c2ddae65515984e",
+      "store": "Kroger",
+      "title": "Kroger & Affiliated Stores Offer: 1-Yr Boost Membership w/ Choice of Stream Plan $25 & More (Valid thru 12/1)",
+      "description": "Kroger Boost [kroger.com] Ralphs Boost [ralphs.com] Food4Less Boost [food4less.com] Kroger online including Ralphs and Food 4 Less are having a 75% off Boost Membership. Clip the 75% off...",
+      "url": "https://slickdeals.net/f/20393148-kroger-ralphs-food-4-less-boost-membership-75-off-only-25-for-1-year-includes-hulu-disney-plus-or-espn",
       "source": "Slickdeals frontpage RSS",
       "source_id": "slickdeals",
-      "published_at": "2026-11-24T11:06:37Z",
-      "discovered_at": "2026-11-24T14:26:30Z",
+      "published_at": "2026-11-25T14:17:05Z",
+      "discovered_at": "2026-11-25T14:28:45Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -74,15 +74,15 @@
       "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
     },
     {
-      "id": "30add122d64936c6e9",
+      "id": "4af09e9ebc612a684e",
       "store": "Walmart",
-      "title": "Metal Gear Solid: Master Collection Vol. 2 (PS5) $30 + Free Pickup",
-      "description": "Free store pick up. Free shipping for Walmart Members or orders $35+ https://www.walmart.com/ip/seort/19617857713",
-      "url": "https://slickdeals.net/f/20382549-metal-gear-solid-master-collection-vol-2-ps5-30-walmart",
+      "title": "Boys' Holiday Sweaters (Star Wars, Pokemon, Home Alone & Snoopy) $8",
+      "description": "Walmart [walmart.com] has *Star Wars Boys' Darth Vader Lack of Cheer Holiday Sweaters* on sale for *$8*. Shipping is free w/ Walmart+ ($1 trial available [walmart.com]) or on orders $35+. Example...",
+      "url": "https://slickdeals.net/f/20392542-boy-s-holiday-sweaters-star-wars-pokemon-home-alone-snoopy-boys-sm-xl-8-free-shipping-w-walmart-or-on-35",
       "source": "Slickdeals frontpage RSS",
       "source_id": "slickdeals",
-      "published_at": "2026-11-24T10:59:03Z",
-      "discovered_at": "2026-11-24T14:26:30Z",
+      "published_at": "2026-11-25T14:04:37Z",
+      "discovered_at": "2026-11-25T14:28:45Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -91,15 +91,15 @@
       "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
     },
     {
-      "id": "456f48c5c5d6e53d0d",
+      "id": "cc164f7668f2a2ef60",
       "store": "Walmart",
-      "title": "Spyro Reignited Trilogy (Nintendo Switch) $18",
-      "description": "Walmart [walmart.com] has *Spyro Reignited Trilogy* (Nintendo Switch) for *$17.97*. *Shipping is free* w/ Walmart+ or on orders $35+",
-      "url": "https://slickdeals.net/f/20383917-spyro-reignited-trilogy-nintendo-switch-17-97-free-shipping-w-walmart-or-on-35",
+      "title": "28\" Blackstone Original 2-Burner Outdoor Flat Top Grill w/ Griddle Cover (Black) $180 + Free S&H",
+      "description": "best deal I could find with hood and cover. https://www.walmart.com/ip/Blacks...5321507729",
+      "url": "https://slickdeals.net/f/20390448-blackstone-original-pre-seasoned-outdoor-griddle-28-inch-2-burner-flat-top-grill-with-omnivore-griddle-top-and-hard-cover-with-blackstone-28-inch-griddle-cover-179-95",
       "source": "Slickdeals frontpage RSS",
       "source_id": "slickdeals",
-      "published_at": "2026-11-24T10:46:08Z",
-      "discovered_at": "2026-11-24T14:26:30Z",
+      "published_at": "2026-11-25T13:28:27Z",
+      "discovered_at": "2026-11-25T14:28:45Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -108,15 +108,15 @@
       "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
     },
     {
-      "id": "572bbcc6f294e35baa",
-      "store": "Walmart",
-      "title": "The Polar Express (2004) (4K Ultra HD + Blu-Ray) $10 + Free S&H",
-      "description": "https://www.walmart.com/ip/The-Po...om=/search",
-      "url": "https://slickdeals.net/f/20376540-the-polar-express-4k-ultra-hd-blu-ray-9-99-walmart-com",
+      "id": "9b10e94a1e77e6a117",
+      "store": "Costco",
+      "title": "Costco Members: 4-Pk $25 Shake Shack Restaurant eGift Card (Email Delivery) $80 or Less",
+      "description": "Costco has 4 x $25 Shake Shack eGift cards for $79.99 https://www.costco.com/p/-/shake-...4000390574",
+      "url": "https://slickdeals.net/f/20382945-costco-members-shake-shack-100-4-x-25-egift-cards-79-99",
       "source": "Slickdeals frontpage RSS",
       "source_id": "slickdeals",
-      "published_at": "2026-11-24T10:16:32Z",
-      "discovered_at": "2026-11-24T14:26:30Z",
+      "published_at": "2026-11-25T13:18:04Z",
+      "discovered_at": "2026-11-25T14:28:45Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -125,15 +125,66 @@
       "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
     },
     {
-      "id": "66a8737f918328055d",
+      "id": "f6ee24dbb410d1441f",
       "store": "Walmart",
-      "title": "WORKPRO 17\"W x 11.5\"D x 51.5\"H 5-Tier Metal Shelving Unit (550-Lb Capacity) $30",
-      "description": "$29.99: WORKPRO 550 lbs 5-Tier Metal Shelving Unit, 17\"W x 11.5\"D x 51.5\"H at Walmart.com Shipping is free w/ Walmart+ or on orders of $35+ https://www.walmart.com/ip/WORKPR...om=/search",
-      "url": "https://slickdeals.net/f/20375970-29-99-workpro-550-lbs-5-tier-metal-shelving-unit-17-w-x-11-5-d-x-51-5-h-at-walmart-com",
+      "title": "Little Tikes Gas 'n Go Mower Interactive Toy $16.50",
+      "description": "Amazon [amazon.com] has *Little Tikes Gas 'n Go Mower Kids' and Toddler Toy * for *$16.49*. Shipping is free w/ Prime or on $35+. Walmart [walmart.com] also has *Little Tikes Gas 'n Go Mower Kids'...",
+      "url": "https://slickdeals.net/f/20385978-little-tikes-gas-n-go-mower-kids-and-toddler-toy-16-49-free-shipping-w-prime-or-on-35",
       "source": "Slickdeals frontpage RSS",
       "source_id": "slickdeals",
-      "published_at": "2026-11-24T09:52:14Z",
-      "discovered_at": "2026-11-24T14:26:30Z",
+      "published_at": "2026-11-25T12:53:02Z",
+      "discovered_at": "2026-11-25T14:28:45Z",
+      "signals": [
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 8,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "183eb41fefa9f70397",
+      "store": "Costco",
+      "title": "Costco In-Warehouse Offer: 48oz. David's Cookies Butter Pecan Meltaways Tin $11.90 (Valid thru 11/30)",
+      "description": "*STARTS 11/16 in-warehouse* David's Cookies Butter Pecan Meltaways 3 lb. tin $11.89 You can use the Costco app to check availability. Tap on the Warehouse tab and search for item *2043259*....",
+      "url": "https://slickdeals.net/f/20236320-nov-16-30-costco-in-warehouse-david-s-cookies-butter-pecan-meltaways-3-lb-tin-11-89",
+      "source": "Slickdeals frontpage RSS",
+      "source_id": "slickdeals",
+      "published_at": "2026-11-25T12:37:58Z",
+      "discovered_at": "2026-11-25T14:28:45Z",
+      "signals": [
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 8,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "61bdb882ea91eaed48",
+      "store": "Walmart",
+      "title": "Monster Jam Showdown (PS5) $15",
+      "description": "Walmart [walmart.com] has *Monster Jam Showdown* (PS5) for *$14.97*. *Shipping is free* w/ Walmart+ or on orders $35+",
+      "url": "https://slickdeals.net/f/20392887-monster-jam-showdown-ps5-14-97-free-shipping-w-walmart-or-on-35",
+      "source": "Slickdeals frontpage RSS",
+      "source_id": "slickdeals",
+      "published_at": "2026-11-25T12:32:03Z",
+      "discovered_at": "2026-11-25T14:28:45Z",
+      "signals": [
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 8,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "2ceb993d72d70df9c5",
+      "store": "Walmart",
+      "title": "Apple Watch Series 11 46mm w/ Natural Milanese Loop in S/M (GPS + Cellular) $399.50 + Free S&H",
+      "description": "Other options available as well for similar price range https://www.walmart.com/ip/177798...f7401f9623",
+      "url": "https://slickdeals.net/f/20391501-399-50-for-apple-watch-series-11-gps-cellular-46mm-smartwatch-with-natural-titanium-case-with-natural-milanese-loop-s-m",
+      "source": "Slickdeals frontpage RSS",
+      "source_id": "slickdeals",
+      "published_at": "2026-11-25T11:40:41Z",
+      "discovered_at": "2026-11-25T14:28:45Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -150,7 +201,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T14:27:00Z",
-      "discovered_at": "2026-11-24T14:26:30Z",
+      "discovered_at": "2026-11-25T14:28:45Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -167,7 +218,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T17:48:00Z",
-      "discovered_at": "2026-11-24T14:26:30Z",
+      "discovered_at": "2026-11-25T14:28:45Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -184,7 +235,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T17:37:00Z",
-      "discovered_at": "2026-11-24T14:26:30Z",
+      "discovered_at": "2026-11-25T14:28:45Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -201,7 +252,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T15:41:00Z",
-      "discovered_at": "2026-11-24T14:26:30Z",
+      "discovered_at": "2026-11-25T14:28:45Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -218,7 +269,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T15:08:00Z",
-      "discovered_at": "2026-11-24T14:26:30Z",
+      "discovered_at": "2026-11-25T14:28:45Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -235,7 +286,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T16:58:00Z",
-      "discovered_at": "2026-11-24T14:26:30Z",
+      "discovered_at": "2026-11-25T14:28:45Z",
       "signals": [],
       "priority_score": 0,
       "stage": "research_lead",
@@ -250,7 +301,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T14:45:00Z",
-      "discovered_at": "2026-11-24T14:26:30Z",
+      "discovered_at": "2026-11-25T14:28:45Z",
       "signals": [],
       "priority_score": 0,
       "stage": "research_lead",
@@ -259,21 +310,24 @@
   ],
   "reviewed_deals": [],
   "changes": {
-    "date": "2026-11-24",
-    "checked_at": "2026-11-24T14:26:30Z",
-    "new": 5,
+    "date": "2026-11-25",
+    "checked_at": "2026-11-25T14:28:45Z",
+    "new": 8,
     "changed": 0,
-    "no_longer_in_feed": 11,
-    "total_leads": 14,
+    "no_longer_in_feed": 5,
+    "total_leads": 17,
     "sources_successful": 2,
     "sources_total": 2
   },
   "new_ids": [
-    "c84f04584702caff4a",
-    "30add122d64936c6e9",
-    "456f48c5c5d6e53d0d",
-    "572bbcc6f294e35baa",
-    "66a8737f918328055d"
+    "b98c2ddae65515984e",
+    "4af09e9ebc612a684e",
+    "cc164f7668f2a2ef60",
+    "9b10e94a1e77e6a117",
+    "f6ee24dbb410d1441f",
+    "183eb41fefa9f70397",
+    "61bdb882ea91eaed48",
+    "2ceb993d72d70df9c5"
   ],
   "updated_ids": [],
   "note": "Ranked deal values are only allowed for manually reviewed deals checked today. Feed leads are not confirmed coupon stacks."
