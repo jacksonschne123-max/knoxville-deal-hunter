@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-25T14:28:45Z",
-  "last_successful_at": "2026-11-25T14:28:45Z",
+  "checked_at": "2026-11-26T14:26:45Z",
+  "last_successful_at": "2026-11-26T14:26:45Z",
   "collector": "RSS discovery; not retailer-account checkout verification",
   "sources": [
     {
@@ -9,17 +9,53 @@
       "name": "The Krazy Coupon Lady RSS",
       "ok": true,
       "offers": 306,
-      "checked_at": "2026-11-25T14:28:45Z"
+      "checked_at": "2026-11-26T14:26:45Z"
     },
     {
       "id": "slickdeals",
       "name": "Slickdeals frontpage RSS",
       "ok": true,
-      "offers": 8,
-      "checked_at": "2026-11-25T14:28:45Z"
+      "offers": 4,
+      "checked_at": "2026-11-26T14:26:45Z"
     }
   ],
   "leads": [
+    {
+      "id": "23ef28f8826348fcc5",
+      "store": "Target",
+      "title": "Card & Board Games Sale: 50% Off: Exploding Kittens: Card Game, Chicken Butt Game $10 & More + Free Pickup",
+      "description": "Target has select *Card & Board Games* for *50% Off* listed below. Select free store pickup where stock permits, otherwise, shipping is free on orders $35+ Thanks to community member *Papalorian*...",
+      "url": "https://slickdeals.net/f/20394222-target-black-friday-50-off-select-board-card-games-exploding-kittens-qwirkle-trekking-the-national-parks-more-from-9-99-free-store-pickup",
+      "source": "Slickdeals frontpage RSS",
+      "source_id": "slickdeals",
+      "published_at": "2026-11-26T11:42:33Z",
+      "discovered_at": "2026-11-26T14:26:45Z",
+      "signals": [
+        "50% advertised",
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 58,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "ad44d123f16965ade1",
+      "store": "Dollar General",
+      "title": "4-Pack DEWALT 20-Volt Batteries (2-Ct. 2 Ah + 2-Ct. 4 Ah) $129 + Free S/H",
+      "description": "Black Friday Deal on dewalt batteries, last year it was $99. You can still get around that price if you stack the upcoming dollar general 15% off $100 Lowe's gift card which will bring the cost to...",
+      "url": "https://slickdeals.net/f/20402823-4-pack-dewalt-20-volt-batteries-2-ct-2-ah-2-ct-4-ah-129-free-s-h",
+      "source": "Slickdeals frontpage RSS",
+      "source_id": "slickdeals",
+      "published_at": "2026-11-26T13:34:44Z",
+      "discovered_at": "2026-11-26T14:26:45Z",
+      "signals": [
+        "Price/reward amount mentioned",
+        "Mentions rewards"
+      ],
+      "priority_score": 43,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
     {
       "id": "8c88e588f2a6413fa9",
       "store": "Walmart",
@@ -29,7 +65,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T15:58:00Z",
-      "discovered_at": "2026-11-25T14:28:45Z",
+      "discovered_at": "2026-11-26T14:26:45Z",
       "signals": [
         "Price/reward amount mentioned",
         "Mentions rewards"
@@ -47,7 +83,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T22:19:00Z",
-      "discovered_at": "2026-11-25T14:28:45Z",
+      "discovered_at": "2026-11-26T14:26:45Z",
       "signals": [
         "25% advertised",
         "Price/reward amount mentioned"
@@ -57,15 +93,15 @@
       "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
     },
     {
-      "id": "b98c2ddae65515984e",
-      "store": "Kroger",
-      "title": "Kroger & Affiliated Stores Offer: 1-Yr Boost Membership w/ Choice of Stream Plan $25 & More (Valid thru 12/1)",
-      "description": "Kroger Boost [kroger.com] Ralphs Boost [ralphs.com] Food4Less Boost [food4less.com] Kroger online including Ralphs and Food 4 Less are having a 75% off Boost Membership. Clip the 75% off...",
-      "url": "https://slickdeals.net/f/20393148-kroger-ralphs-food-4-less-boost-membership-75-off-only-25-for-1-year-includes-hulu-disney-plus-or-espn",
+      "id": "747f561022259fa1ad",
+      "store": "Sam’s Club",
+      "title": "Sam's Club Members: CargoLoc Weatherproof Medium Protective Case w/ Grip Handle $20 + Free Pickup",
+      "description": "https://www.samsclub.com/ip/Cargo...om=/search $20 price starts 11/26 Thu",
+      "url": "https://slickdeals.net/f/20373012-sam-s-club-members-cargoloc-weatherproof-medium-protective-case-w-grip-handle-20-free-pickup",
       "source": "Slickdeals frontpage RSS",
       "source_id": "slickdeals",
-      "published_at": "2026-11-25T14:17:05Z",
-      "discovered_at": "2026-11-25T14:28:45Z",
+      "published_at": "2026-11-26T12:46:42Z",
+      "discovered_at": "2026-11-26T14:26:45Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -74,117 +110,15 @@
       "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
     },
     {
-      "id": "4af09e9ebc612a684e",
+      "id": "dd1be65b9f3c1347f0",
       "store": "Walmart",
-      "title": "Boys' Holiday Sweaters (Star Wars, Pokemon, Home Alone & Snoopy) $8",
-      "description": "Walmart [walmart.com] has *Star Wars Boys' Darth Vader Lack of Cheer Holiday Sweaters* on sale for *$8*. Shipping is free w/ Walmart+ ($1 trial available [walmart.com]) or on orders $35+. Example...",
-      "url": "https://slickdeals.net/f/20392542-boy-s-holiday-sweaters-star-wars-pokemon-home-alone-snoopy-boys-sm-xl-8-free-shipping-w-walmart-or-on-35",
+      "title": "Red Dead Redemption (PS5) $15 + Free Pickup",
+      "description": "Walmart has *Red Dead Redemption* (PS5) on sale for *$15*. Select free store pickup where stock permits, otherwise, *shipping is free* on orders $35+, otherwise, free shipping w/ Walmart+ Membership...",
+      "url": "https://slickdeals.net/f/20402052-red-dead-redemption-ps5-15-walmart",
       "source": "Slickdeals frontpage RSS",
       "source_id": "slickdeals",
-      "published_at": "2026-11-25T14:04:37Z",
-      "discovered_at": "2026-11-25T14:28:45Z",
-      "signals": [
-        "Price/reward amount mentioned"
-      ],
-      "priority_score": 8,
-      "stage": "research_lead",
-      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
-    },
-    {
-      "id": "cc164f7668f2a2ef60",
-      "store": "Walmart",
-      "title": "28\" Blackstone Original 2-Burner Outdoor Flat Top Grill w/ Griddle Cover (Black) $180 + Free S&H",
-      "description": "best deal I could find with hood and cover. https://www.walmart.com/ip/Blacks...5321507729",
-      "url": "https://slickdeals.net/f/20390448-blackstone-original-pre-seasoned-outdoor-griddle-28-inch-2-burner-flat-top-grill-with-omnivore-griddle-top-and-hard-cover-with-blackstone-28-inch-griddle-cover-179-95",
-      "source": "Slickdeals frontpage RSS",
-      "source_id": "slickdeals",
-      "published_at": "2026-11-25T13:28:27Z",
-      "discovered_at": "2026-11-25T14:28:45Z",
-      "signals": [
-        "Price/reward amount mentioned"
-      ],
-      "priority_score": 8,
-      "stage": "research_lead",
-      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
-    },
-    {
-      "id": "9b10e94a1e77e6a117",
-      "store": "Costco",
-      "title": "Costco Members: 4-Pk $25 Shake Shack Restaurant eGift Card (Email Delivery) $80 or Less",
-      "description": "Costco has 4 x $25 Shake Shack eGift cards for $79.99 https://www.costco.com/p/-/shake-...4000390574",
-      "url": "https://slickdeals.net/f/20382945-costco-members-shake-shack-100-4-x-25-egift-cards-79-99",
-      "source": "Slickdeals frontpage RSS",
-      "source_id": "slickdeals",
-      "published_at": "2026-11-25T13:18:04Z",
-      "discovered_at": "2026-11-25T14:28:45Z",
-      "signals": [
-        "Price/reward amount mentioned"
-      ],
-      "priority_score": 8,
-      "stage": "research_lead",
-      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
-    },
-    {
-      "id": "f6ee24dbb410d1441f",
-      "store": "Walmart",
-      "title": "Little Tikes Gas 'n Go Mower Interactive Toy $16.50",
-      "description": "Amazon [amazon.com] has *Little Tikes Gas 'n Go Mower Kids' and Toddler Toy * for *$16.49*. Shipping is free w/ Prime or on $35+. Walmart [walmart.com] also has *Little Tikes Gas 'n Go Mower Kids'...",
-      "url": "https://slickdeals.net/f/20385978-little-tikes-gas-n-go-mower-kids-and-toddler-toy-16-49-free-shipping-w-prime-or-on-35",
-      "source": "Slickdeals frontpage RSS",
-      "source_id": "slickdeals",
-      "published_at": "2026-11-25T12:53:02Z",
-      "discovered_at": "2026-11-25T14:28:45Z",
-      "signals": [
-        "Price/reward amount mentioned"
-      ],
-      "priority_score": 8,
-      "stage": "research_lead",
-      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
-    },
-    {
-      "id": "183eb41fefa9f70397",
-      "store": "Costco",
-      "title": "Costco In-Warehouse Offer: 48oz. David's Cookies Butter Pecan Meltaways Tin $11.90 (Valid thru 11/30)",
-      "description": "*STARTS 11/16 in-warehouse* David's Cookies Butter Pecan Meltaways 3 lb. tin $11.89 You can use the Costco app to check availability. Tap on the Warehouse tab and search for item *2043259*....",
-      "url": "https://slickdeals.net/f/20236320-nov-16-30-costco-in-warehouse-david-s-cookies-butter-pecan-meltaways-3-lb-tin-11-89",
-      "source": "Slickdeals frontpage RSS",
-      "source_id": "slickdeals",
-      "published_at": "2026-11-25T12:37:58Z",
-      "discovered_at": "2026-11-25T14:28:45Z",
-      "signals": [
-        "Price/reward amount mentioned"
-      ],
-      "priority_score": 8,
-      "stage": "research_lead",
-      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
-    },
-    {
-      "id": "61bdb882ea91eaed48",
-      "store": "Walmart",
-      "title": "Monster Jam Showdown (PS5) $15",
-      "description": "Walmart [walmart.com] has *Monster Jam Showdown* (PS5) for *$14.97*. *Shipping is free* w/ Walmart+ or on orders $35+",
-      "url": "https://slickdeals.net/f/20392887-monster-jam-showdown-ps5-14-97-free-shipping-w-walmart-or-on-35",
-      "source": "Slickdeals frontpage RSS",
-      "source_id": "slickdeals",
-      "published_at": "2026-11-25T12:32:03Z",
-      "discovered_at": "2026-11-25T14:28:45Z",
-      "signals": [
-        "Price/reward amount mentioned"
-      ],
-      "priority_score": 8,
-      "stage": "research_lead",
-      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
-    },
-    {
-      "id": "2ceb993d72d70df9c5",
-      "store": "Walmart",
-      "title": "Apple Watch Series 11 46mm w/ Natural Milanese Loop in S/M (GPS + Cellular) $399.50 + Free S&H",
-      "description": "Other options available as well for similar price range https://www.walmart.com/ip/177798...f7401f9623",
-      "url": "https://slickdeals.net/f/20391501-399-50-for-apple-watch-series-11-gps-cellular-46mm-smartwatch-with-natural-titanium-case-with-natural-milanese-loop-s-m",
-      "source": "Slickdeals frontpage RSS",
-      "source_id": "slickdeals",
-      "published_at": "2026-11-25T11:40:41Z",
-      "discovered_at": "2026-11-25T14:28:45Z",
+      "published_at": "2026-11-26T10:45:45Z",
+      "discovered_at": "2026-11-26T14:26:45Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -201,7 +135,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T14:27:00Z",
-      "discovered_at": "2026-11-25T14:28:45Z",
+      "discovered_at": "2026-11-26T14:26:45Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -218,7 +152,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T17:48:00Z",
-      "discovered_at": "2026-11-25T14:28:45Z",
+      "discovered_at": "2026-11-26T14:26:45Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -235,7 +169,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T17:37:00Z",
-      "discovered_at": "2026-11-25T14:28:45Z",
+      "discovered_at": "2026-11-26T14:26:45Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -252,7 +186,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T15:41:00Z",
-      "discovered_at": "2026-11-25T14:28:45Z",
+      "discovered_at": "2026-11-26T14:26:45Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -269,7 +203,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T15:08:00Z",
-      "discovered_at": "2026-11-25T14:28:45Z",
+      "discovered_at": "2026-11-26T14:26:45Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -286,7 +220,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T16:58:00Z",
-      "discovered_at": "2026-11-25T14:28:45Z",
+      "discovered_at": "2026-11-26T14:26:45Z",
       "signals": [],
       "priority_score": 0,
       "stage": "research_lead",
@@ -301,7 +235,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T14:45:00Z",
-      "discovered_at": "2026-11-25T14:28:45Z",
+      "discovered_at": "2026-11-26T14:26:45Z",
       "signals": [],
       "priority_score": 0,
       "stage": "research_lead",
@@ -310,24 +244,20 @@
   ],
   "reviewed_deals": [],
   "changes": {
-    "date": "2026-11-25",
-    "checked_at": "2026-11-25T14:28:45Z",
-    "new": 8,
+    "date": "2026-11-26",
+    "checked_at": "2026-11-26T14:26:45Z",
+    "new": 4,
     "changed": 0,
-    "no_longer_in_feed": 5,
-    "total_leads": 17,
+    "no_longer_in_feed": 8,
+    "total_leads": 13,
     "sources_successful": 2,
     "sources_total": 2
   },
   "new_ids": [
-    "b98c2ddae65515984e",
-    "4af09e9ebc612a684e",
-    "cc164f7668f2a2ef60",
-    "9b10e94a1e77e6a117",
-    "f6ee24dbb410d1441f",
-    "183eb41fefa9f70397",
-    "61bdb882ea91eaed48",
-    "2ceb993d72d70df9c5"
+    "23ef28f8826348fcc5",
+    "ad44d123f16965ade1",
+    "747f561022259fa1ad",
+    "dd1be65b9f3c1347f0"
   ],
   "updated_ids": [],
   "note": "Ranked deal values are only allowed for manually reviewed deals checked today. Feed leads are not confirmed coupon stacks."
