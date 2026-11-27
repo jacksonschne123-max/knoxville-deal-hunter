@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-26T14:26:45Z",
-  "last_successful_at": "2026-11-26T14:26:45Z",
+  "checked_at": "2026-11-27T14:25:03Z",
+  "last_successful_at": "2026-11-27T14:25:03Z",
   "collector": "RSS discovery; not retailer-account checkout verification",
   "sources": [
     {
@@ -9,53 +9,17 @@
       "name": "The Krazy Coupon Lady RSS",
       "ok": true,
       "offers": 306,
-      "checked_at": "2026-11-26T14:26:45Z"
+      "checked_at": "2026-11-27T14:25:03Z"
     },
     {
       "id": "slickdeals",
       "name": "Slickdeals frontpage RSS",
       "ok": true,
-      "offers": 4,
-      "checked_at": "2026-11-26T14:26:45Z"
+      "offers": 3,
+      "checked_at": "2026-11-27T14:25:03Z"
     }
   ],
   "leads": [
-    {
-      "id": "23ef28f8826348fcc5",
-      "store": "Target",
-      "title": "Card & Board Games Sale: 50% Off: Exploding Kittens: Card Game, Chicken Butt Game $10 & More + Free Pickup",
-      "description": "Target has select *Card & Board Games* for *50% Off* listed below. Select free store pickup where stock permits, otherwise, shipping is free on orders $35+ Thanks to community member *Papalorian*...",
-      "url": "https://slickdeals.net/f/20394222-target-black-friday-50-off-select-board-card-games-exploding-kittens-qwirkle-trekking-the-national-parks-more-from-9-99-free-store-pickup",
-      "source": "Slickdeals frontpage RSS",
-      "source_id": "slickdeals",
-      "published_at": "2026-11-26T11:42:33Z",
-      "discovered_at": "2026-11-26T14:26:45Z",
-      "signals": [
-        "50% advertised",
-        "Price/reward amount mentioned"
-      ],
-      "priority_score": 58,
-      "stage": "research_lead",
-      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
-    },
-    {
-      "id": "ad44d123f16965ade1",
-      "store": "Dollar General",
-      "title": "4-Pack DEWALT 20-Volt Batteries (2-Ct. 2 Ah + 2-Ct. 4 Ah) $129 + Free S/H",
-      "description": "Black Friday Deal on dewalt batteries, last year it was $99. You can still get around that price if you stack the upcoming dollar general 15% off $100 Lowe's gift card which will bring the cost to...",
-      "url": "https://slickdeals.net/f/20402823-4-pack-dewalt-20-volt-batteries-2-ct-2-ah-2-ct-4-ah-129-free-s-h",
-      "source": "Slickdeals frontpage RSS",
-      "source_id": "slickdeals",
-      "published_at": "2026-11-26T13:34:44Z",
-      "discovered_at": "2026-11-26T14:26:45Z",
-      "signals": [
-        "Price/reward amount mentioned",
-        "Mentions rewards"
-      ],
-      "priority_score": 43,
-      "stage": "research_lead",
-      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
-    },
     {
       "id": "8c88e588f2a6413fa9",
       "store": "Walmart",
@@ -65,7 +29,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T15:58:00Z",
-      "discovered_at": "2026-11-26T14:26:45Z",
+      "discovered_at": "2026-11-27T14:25:03Z",
       "signals": [
         "Price/reward amount mentioned",
         "Mentions rewards"
@@ -83,7 +47,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T22:19:00Z",
-      "discovered_at": "2026-11-26T14:26:45Z",
+      "discovered_at": "2026-11-27T14:25:03Z",
       "signals": [
         "25% advertised",
         "Price/reward amount mentioned"
@@ -93,15 +57,15 @@
       "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
     },
     {
-      "id": "747f561022259fa1ad",
-      "store": "Sam’s Club",
-      "title": "Sam's Club Members: CargoLoc Weatherproof Medium Protective Case w/ Grip Handle $20 + Free Pickup",
-      "description": "https://www.samsclub.com/ip/Cargo...om=/search $20 price starts 11/26 Thu",
-      "url": "https://slickdeals.net/f/20373012-sam-s-club-members-cargoloc-weatherproof-medium-protective-case-w-grip-handle-20-free-pickup",
+      "id": "c031a1bf57cc6a18ec",
+      "store": "Walmart",
+      "title": "Cozy Haven Reversible Faux Fur Bed Blanket (Queen or King, 3 Colors) $25",
+      "description": "Walmart [walmart.com] has *Cozy Haven King Reversible Faux Fur Bed Blanket (various)* on sale for *$25*. Shipping is free w/ Walmart+ ($1 trial available [walmart.com]) or on orders $35+. ...",
+      "url": "https://slickdeals.net/f/20414661-cozy-haven-king-reversible-faux-fur-bed-blanket-various-25-free-shipping-w-walmart-or-on-35",
       "source": "Slickdeals frontpage RSS",
       "source_id": "slickdeals",
-      "published_at": "2026-11-26T12:46:42Z",
-      "discovered_at": "2026-11-26T14:26:45Z",
+      "published_at": "2026-11-27T12:24:08Z",
+      "discovered_at": "2026-11-27T14:25:03Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -110,15 +74,32 @@
       "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
     },
     {
-      "id": "dd1be65b9f3c1347f0",
-      "store": "Walmart",
-      "title": "Red Dead Redemption (PS5) $15 + Free Pickup",
-      "description": "Walmart has *Red Dead Redemption* (PS5) on sale for *$15*. Select free store pickup where stock permits, otherwise, *shipping is free* on orders $35+, otherwise, free shipping w/ Walmart+ Membership...",
-      "url": "https://slickdeals.net/f/20402052-red-dead-redemption-ps5-15-walmart",
+      "id": "fb8a28458bfcc06a09",
+      "store": "Costco",
+      "title": "Costco Members: Bosch 300 Series VeroCafe Fully Automatic Espresso Machine $300 + Free S&H",
+      "description": "Bosch 300 Series Fully Automatic Espresso and Coffee Machine, Dark Silver, currently on sale at Costco at $299.97. https://www.costco.com/p/-/bosch-...4000318179",
+      "url": "https://slickdeals.net/f/20408976-bosch-300-series-fully-automatic-espresso-and-coffee-machine-dark-silver-299-97",
       "source": "Slickdeals frontpage RSS",
       "source_id": "slickdeals",
-      "published_at": "2026-11-26T10:45:45Z",
-      "discovered_at": "2026-11-26T14:26:45Z",
+      "published_at": "2026-11-27T11:49:38Z",
+      "discovered_at": "2026-11-27T14:25:03Z",
+      "signals": [
+        "Price/reward amount mentioned"
+      ],
+      "priority_score": 8,
+      "stage": "research_lead",
+      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
+    },
+    {
+      "id": "71ecb2806aafc71395",
+      "store": "Walmart",
+      "title": "Better Homes & Gardens Modern Farmhouse 6-Drawer Dresser (Rustic White) $100.80 + Free S&H",
+      "description": "Walmart has *Better Homes & Gardens Modern Farmhouse 6-Drawer Horizontal Dresser* (Rustic White) on sale for *$100.80*. *Shipping is free*. Thanks Deal Hunter *babgaly* for sharing this deal ...",
+      "url": "https://slickdeals.net/f/20414010-better-homes-gardens-modern-farmhouse-6-drawer-dresser-rustic-white-100-80-free-s-h",
+      "source": "Slickdeals frontpage RSS",
+      "source_id": "slickdeals",
+      "published_at": "2026-11-27T11:42:45Z",
+      "discovered_at": "2026-11-27T14:25:03Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -135,7 +116,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T14:27:00Z",
-      "discovered_at": "2026-11-26T14:26:45Z",
+      "discovered_at": "2026-11-27T14:25:03Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -152,7 +133,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T17:48:00Z",
-      "discovered_at": "2026-11-26T14:26:45Z",
+      "discovered_at": "2026-11-27T14:25:03Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -169,7 +150,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T17:37:00Z",
-      "discovered_at": "2026-11-26T14:26:45Z",
+      "discovered_at": "2026-11-27T14:25:03Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -186,7 +167,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T15:41:00Z",
-      "discovered_at": "2026-11-26T14:26:45Z",
+      "discovered_at": "2026-11-27T14:25:03Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -203,7 +184,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T15:08:00Z",
-      "discovered_at": "2026-11-26T14:26:45Z",
+      "discovered_at": "2026-11-27T14:25:03Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -220,7 +201,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T16:58:00Z",
-      "discovered_at": "2026-11-26T14:26:45Z",
+      "discovered_at": "2026-11-27T14:25:03Z",
       "signals": [],
       "priority_score": 0,
       "stage": "research_lead",
@@ -235,7 +216,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T14:45:00Z",
-      "discovered_at": "2026-11-26T14:26:45Z",
+      "discovered_at": "2026-11-27T14:25:03Z",
       "signals": [],
       "priority_score": 0,
       "stage": "research_lead",
@@ -244,20 +225,19 @@
   ],
   "reviewed_deals": [],
   "changes": {
-    "date": "2026-11-26",
-    "checked_at": "2026-11-26T14:26:45Z",
-    "new": 4,
+    "date": "2026-11-27",
+    "checked_at": "2026-11-27T14:25:03Z",
+    "new": 3,
     "changed": 0,
-    "no_longer_in_feed": 8,
-    "total_leads": 13,
+    "no_longer_in_feed": 4,
+    "total_leads": 12,
     "sources_successful": 2,
     "sources_total": 2
   },
   "new_ids": [
-    "23ef28f8826348fcc5",
-    "ad44d123f16965ade1",
-    "747f561022259fa1ad",
-    "dd1be65b9f3c1347f0"
+    "c031a1bf57cc6a18ec",
+    "fb8a28458bfcc06a09",
+    "71ecb2806aafc71395"
   ],
   "updated_ids": [],
   "note": "Ranked deal values are only allowed for manually reviewed deals checked today. Feed leads are not confirmed coupon stacks."
