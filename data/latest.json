@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "checked_at": "2026-11-27T14:25:03Z",
-  "last_successful_at": "2026-11-27T14:25:03Z",
+  "checked_at": "2026-11-28T14:09:58Z",
+  "last_successful_at": "2026-11-28T14:09:58Z",
   "collector": "RSS discovery; not retailer-account checkout verification",
   "sources": [
     {
@@ -9,14 +9,14 @@
       "name": "The Krazy Coupon Lady RSS",
       "ok": true,
       "offers": 306,
-      "checked_at": "2026-11-27T14:25:03Z"
+      "checked_at": "2026-11-28T14:09:58Z"
     },
     {
       "id": "slickdeals",
       "name": "Slickdeals frontpage RSS",
       "ok": true,
-      "offers": 3,
-      "checked_at": "2026-11-27T14:25:03Z"
+      "offers": 2,
+      "checked_at": "2026-11-28T14:09:58Z"
     }
   ],
   "leads": [
@@ -29,7 +29,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T15:58:00Z",
-      "discovered_at": "2026-11-27T14:25:03Z",
+      "discovered_at": "2026-11-28T14:09:58Z",
       "signals": [
         "Price/reward amount mentioned",
         "Mentions rewards"
@@ -47,7 +47,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T22:19:00Z",
-      "discovered_at": "2026-11-27T14:25:03Z",
+      "discovered_at": "2026-11-28T14:09:58Z",
       "signals": [
         "25% advertised",
         "Price/reward amount mentioned"
@@ -57,15 +57,15 @@
       "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
     },
     {
-      "id": "c031a1bf57cc6a18ec",
+      "id": "b0ed104c4246eaf0ff",
       "store": "Walmart",
-      "title": "Cozy Haven Reversible Faux Fur Bed Blanket (Queen or King, 3 Colors) $25",
-      "description": "Walmart [walmart.com] has *Cozy Haven King Reversible Faux Fur Bed Blanket (various)* on sale for *$25*. Shipping is free w/ Walmart+ ($1 trial available [walmart.com]) or on orders $35+. ...",
-      "url": "https://slickdeals.net/f/20414661-cozy-haven-king-reversible-faux-fur-bed-blanket-various-25-free-shipping-w-walmart-or-on-35",
+      "title": "Select Walmart Stores: Call of Duty: Black Ops 6 (PS5 or Xbox Series X) $15 + Free S&H on $35+",
+      "description": "Select Walmart Stores have *Call of Duty: Black Ops 6* (PS5 or Xbox Series X) on sale for *$15*. *Shipping is free* w/ Walmart+ (30-day trial for $1) or on orders of $35+.",
+      "url": "https://slickdeals.net/f/20423355-call-of-duty-black-ops-6-xbox-one-series-x-or-ps5-15-walmart",
       "source": "Slickdeals frontpage RSS",
       "source_id": "slickdeals",
-      "published_at": "2026-11-27T12:24:08Z",
-      "discovered_at": "2026-11-27T14:25:03Z",
+      "published_at": "2026-11-28T11:04:08Z",
+      "discovered_at": "2026-11-28T14:09:58Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -74,32 +74,15 @@
       "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
     },
     {
-      "id": "fb8a28458bfcc06a09",
+      "id": "1ae70de587a26c28ff",
       "store": "Costco",
-      "title": "Costco Members: Bosch 300 Series VeroCafe Fully Automatic Espresso Machine $300 + Free S&H",
-      "description": "Bosch 300 Series Fully Automatic Espresso and Coffee Machine, Dark Silver, currently on sale at Costco at $299.97. https://www.costco.com/p/-/bosch-...4000318179",
-      "url": "https://slickdeals.net/f/20408976-bosch-300-series-fully-automatic-espresso-and-coffee-machine-dark-silver-299-97",
+      "title": "Costco Members: Apple MacBook Air: M5 Chip, 15.3\" Retina, 16GB RAM, 512GB SSD $1200 + Free S&H",
+      "description": "Costco Members: MacBook Air: 15.3\" Liquid Retina, M5 Chip, 16GB RAM, 512GB SSD https://www.costco.com/p/-/macboo...4000444232",
+      "url": "https://slickdeals.net/f/20412303-costco-members-macbook-air-15-3-liquid-retina-m5-chip-16gb-ram-512gb-ssd-1199-99",
       "source": "Slickdeals frontpage RSS",
       "source_id": "slickdeals",
-      "published_at": "2026-11-27T11:49:38Z",
-      "discovered_at": "2026-11-27T14:25:03Z",
-      "signals": [
-        "Price/reward amount mentioned"
-      ],
-      "priority_score": 8,
-      "stage": "research_lead",
-      "notice": "Published deal lead only. Verify local price, quantities, account coupons, stacking, and reward terms before purchase."
-    },
-    {
-      "id": "71ecb2806aafc71395",
-      "store": "Walmart",
-      "title": "Better Homes & Gardens Modern Farmhouse 6-Drawer Dresser (Rustic White) $100.80 + Free S&H",
-      "description": "Walmart has *Better Homes & Gardens Modern Farmhouse 6-Drawer Horizontal Dresser* (Rustic White) on sale for *$100.80*. *Shipping is free*. Thanks Deal Hunter *babgaly* for sharing this deal ...",
-      "url": "https://slickdeals.net/f/20414010-better-homes-gardens-modern-farmhouse-6-drawer-dresser-rustic-white-100-80-free-s-h",
-      "source": "Slickdeals frontpage RSS",
-      "source_id": "slickdeals",
-      "published_at": "2026-11-27T11:42:45Z",
-      "discovered_at": "2026-11-27T14:25:03Z",
+      "published_at": "2026-11-28T10:40:38Z",
+      "discovered_at": "2026-11-28T14:09:58Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -116,7 +99,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T14:27:00Z",
-      "discovered_at": "2026-11-27T14:25:03Z",
+      "discovered_at": "2026-11-28T14:09:58Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -133,7 +116,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T17:48:00Z",
-      "discovered_at": "2026-11-27T14:25:03Z",
+      "discovered_at": "2026-11-28T14:09:58Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -150,7 +133,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T17:37:00Z",
-      "discovered_at": "2026-11-27T14:25:03Z",
+      "discovered_at": "2026-11-28T14:09:58Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -167,7 +150,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T15:41:00Z",
-      "discovered_at": "2026-11-27T14:25:03Z",
+      "discovered_at": "2026-11-28T14:09:58Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -184,7 +167,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-17T15:08:00Z",
-      "discovered_at": "2026-11-27T14:25:03Z",
+      "discovered_at": "2026-11-28T14:09:58Z",
       "signals": [
         "Price/reward amount mentioned"
       ],
@@ -201,7 +184,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T16:58:00Z",
-      "discovered_at": "2026-11-27T14:25:03Z",
+      "discovered_at": "2026-11-28T14:09:58Z",
       "signals": [],
       "priority_score": 0,
       "stage": "research_lead",
@@ -216,7 +199,7 @@
       "source": "The Krazy Coupon Lady RSS",
       "source_id": "kcl",
       "published_at": "2026-11-18T14:45:00Z",
-      "discovered_at": "2026-11-27T14:25:03Z",
+      "discovered_at": "2026-11-28T14:09:58Z",
       "signals": [],
       "priority_score": 0,
       "stage": "research_lead",
@@ -225,19 +208,18 @@
   ],
   "reviewed_deals": [],
   "changes": {
-    "date": "2026-11-27",
-    "checked_at": "2026-11-27T14:25:03Z",
-    "new": 3,
+    "date": "2026-11-28",
+    "checked_at": "2026-11-28T14:09:58Z",
+    "new": 2,
     "changed": 0,
-    "no_longer_in_feed": 4,
-    "total_leads": 12,
+    "no_longer_in_feed": 3,
+    "total_leads": 11,
     "sources_successful": 2,
     "sources_total": 2
   },
   "new_ids": [
-    "c031a1bf57cc6a18ec",
-    "fb8a28458bfcc06a09",
-    "71ecb2806aafc71395"
+    "b0ed104c4246eaf0ff",
+    "1ae70de587a26c28ff"
   ],
   "updated_ids": [],
   "note": "Ranked deal values are only allowed for manually reviewed deals checked today. Feed leads are not confirmed coupon stacks."
